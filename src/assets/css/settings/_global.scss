@@ -22,18 +22,18 @@
    *
    */
   --unit: #{$slate-global-spacing-unit};
-  @each $unit-name, $unit-value in units() {
-    --unit-#{$unit-name}: #{$unit-value};
-  }
+  // @each $unit-name, $unit-value in units() {
+  //   --unit-#{$unit-name}: #{$unit-value};
+  // }
 
   /**
    *
    * Breakpoints
    *
    */
-  @each $bp-name, $bp-target in units() {
-    --bp-#{ $bp-name }: #{$bp-target};
-  }
+  // @each $bp-name, $bp-target in breakpoints() {
+  //   --bp-#{ $bp-name }: #{$bp-target};
+  // }
 
   /**
    *
