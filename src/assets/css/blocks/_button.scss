@@ -1,0 +1,9 @@
+/*=============================================
+=            #BUTTON BLOCK            =
+=============================================*/
+
+.wp-block-button__link,
+.wp-block-file__button {
+  @extend .c-btn;
+  @extend .c-btn--primary;
+}

@@ -1,0 +1,9 @@
+/*=============================================
+=            Form Elements           =
+=============================================*/
+input,
+.input-text {
+  width: 100%;
+  padding: calc(var(--unit) / 2) var(--unit);
+  font-size: 1rem;
+}

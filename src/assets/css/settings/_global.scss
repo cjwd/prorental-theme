@@ -1,0 +1,56 @@
+/*=============================================
+=            #GLOBAL            =
+=============================================*/
+
+// The global settings file contains any project-wide variables; things that
+// need to be made available to the entire codebase.
+
+:root {
+  /**
+   *
+   * `block-colours()`  defined in `settings/_colours.scss`
+   *
+   */
+
+  @each $colour-name, $colour-value in block-colours() {
+    --colour-#{ $colour-name }: #{$colour-value};
+  }
+
+  /**
+   *
+   * Aliases for global units
+   *
+   */
+  --unit: #{$slate-global-spacing-unit};
+  @each $unit-name, $unit-value in units() {
+    --unit-#{$unit-name}: #{$unit-value};
+  }
+
+  /**
+   *
+   * Breakpoints
+   *
+   */
+  @each $bp-name, $bp-target in units() {
+    --bp-#{ $bp-name }: #{$bp-target};
+  }
+
+  /**
+   *
+   * Wrapper Width
+   *
+   */
+  --wrapper-width: 1170px;
+
+  /**
+   *
+   * Content Width
+   *
+   */
+  --content-width: 960px;
+}
+
+// Standardise some UI treatments.
+
+$global-radius: 3px !default;
+$global-transition: all 300ms ease-in-out !default;

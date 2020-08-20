@@ -1,0 +1,23 @@
+/*=============================================
+=            #Grid            =
+=============================================*/
+
+.o-grid {
+  --gutter-width: 24px;
+  --num-columns: 12;
+  --num-gutters: calc(var(--num-columns) - 1);
+  // ($wrapperWidth - ($numberOfGutters * $gutterWidth)) / $numberOfColumns
+  --grid-column-width: calc(
+    (var(--wrapper-width) - (var(--num-gutters) * var(--gutter-width))) /
+      var(--num-columns)
+  );
+
+  display: grid;
+  grid-template-columns:
+    minmax(var(--gutter-width), 1fr) repeat(
+      var(--num-columns),
+      minmax(auto, var(--grid-column-width))
+    )
+    minmax(var(--gutter-width), 1fr);
+  grid-gap: var(--gutter-width);
+}

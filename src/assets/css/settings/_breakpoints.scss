@@ -1,0 +1,7 @@
+/*=============================================
+=            #Breakpoints            =
+=============================================*/
+
+@function breakpoints() {
+  @return ("tablet-medium": "767px", "tablet-large": "991px");
+}

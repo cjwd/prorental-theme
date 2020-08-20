@@ -1,0 +1,34 @@
+/*=============================================
+=            #Black and White Theme            =
+=============================================*/
+
+/*----------  Logo  ----------*/
+
+.c-siteHeader__logo {
+  text-decoration: none;
+  color: #fff;
+}
+
+/*----------  Main Navigation  ----------*/
+
+.c-siteHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: var(--unit);
+  padding-bottom: var(--unit);
+  background-color: #000;
+  color: #fff;
+}
+
+.menu-item a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*----------  Content  ----------*/
+
+main {
+  margin-top: var(--unit-large);
+  margin-bottom: var(--unit-large);
+}

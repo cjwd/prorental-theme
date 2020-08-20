@@ -1,0 +1,17 @@
+/*=============================================
+=            #Aliases            =
+=============================================*/
+
+/**
+ *
+ * Aliases for very long hard to type / remember variable names
+ *
+ */
+@function units() {
+  @return (
+    "tiny": $slate-global-spacing-unit-tiny,
+    "small": $slate-global-spacing-unit-small,
+    "large": $slate-global-spacing-unit-large,
+    "huge": $slate-global-spacing-unit-huge
+  );
+}

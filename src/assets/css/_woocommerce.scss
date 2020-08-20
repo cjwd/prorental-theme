@@ -1,0 +1,107 @@
+/*=============================================
+=            Buttons           =
+=============================================*/
+.woocommerce #respond input#submit,
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce input.button,
+.woocommerce button.button:disabled:hover,
+.woocommerce button.button:disabled[disabled]:hover {
+  @extend .c-btn;
+}
+
+.add_to_cart_button {
+  background-color: var(--colour-primary) !important;
+  color: var(--colour-white) !important;
+}
+
+#add_payment_method .wc-proceed-to-checkout a.checkout-button,
+.woocommerce-cart .wc-proceed-to-checkout a.checkout-button,
+.woocommerce-checkout .wc-proceed-to-checkout a.checkout-button {
+  @extend .c-btn;
+}
+
+.checkout-button {
+  background-color: var(--colour-primary) !important;
+}
+
+/*=============================================
+=            Form Elements          =
+=============================================*/
+.woocommerce #content table.cart td.actions .input-text,
+.woocommerce table.cart td.actions .input-text,
+.woocommerce-page #content table.cart td.actions .input-text,
+.woocommerce-page table.cart td.actions .input-text {
+  width: 100%;
+}
+
+.woocommerce-cart table.cart td.actions .coupon .input-text {
+  padding: calc(var(--unit) / 2) var(--unit);
+  flex-basis: 50%;
+}
+
+.woocommerce .quantity .qty {
+  width: auto;
+}
+
+/*=============================================
+=            Star Rating            =
+=============================================*/
+.woocommerce .star-rating {
+  float: none !important;
+}
+
+.woocommerce .star-rating span::before {
+  color: var(--colour-primary);
+}
+
+/*=============================================
+=            Breadcrumb           =
+=============================================*/
+.breadcrumb-area .woocommerce-breadcrumb {
+  margin-bottom: 0;
+  padding: 25px 15px;
+  border-radius: 0.25rem;
+  background-color: #f5f5f5;
+  color: var(--colour-primary, #000);
+
+  a {
+    color: #555;
+  }
+}
+
+.woocommerce-breadcrumb a:hover {
+  color: var(--colour-primary, #000);
+}
+
+.woocommerce-breadcrumb-delimiter {
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #ccc;
+}
+
+/*=============================================
+=            My Account           =
+=============================================*/
+.woocommerce-MyAccount-content {
+  border: 1px solid #ebebeb;
+  padding: 30px;
+
+  h3 {
+    border-bottom: 1px solid #ebebeb;
+    font-size: 28px;
+    line-height: 28px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+  }
+}
+
+/*=============================================
+=            Cart           =
+=============================================*/
+.woocommerce #content table.cart td.actions .coupon,
+.woocommerce table.cart td.actions .coupon,
+.woocommerce-page #content table.cart td.actions .coupon,
+.woocommerce-page table.cart td.actions .coupon {
+  display: flex;
+}

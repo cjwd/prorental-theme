@@ -1,0 +1,25 @@
+/*=============================================
+=            #COLOURS            =
+=============================================*/
+
+/**
+ *
+ * Return a map of block colours in name-value format. These are the colours
+ * defined via the `editor-color-palette` settings in `includes/functions-setup`
+ * for the Gutenberg editor.
+ *
+ * CSS Custom Properties are generated from these name-value pairs in
+ * `settings/_global.scss`
+ *
+ */
+
+@function block_colours() {
+  @return (
+    'primary': '#0097e6',
+    'secondary': '#192a56',
+    'white': '#f5f6fa',
+    'black': '#000',
+    'link': '#555',
+    'text': '#333'
+  );
+}

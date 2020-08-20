@@ -1,0 +1,27 @@
+/*=============================================
+=            #ALIGNMENT            =
+=============================================*/
+
+.aligncenter,
+.alignfull,
+.alignwide {
+  clear: both;
+}
+
+.aligncenter {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.alignleft {
+  margin-right: $slate-global-spacing-unit;
+  margin-bottom: $slate-global-spacing-unit;
+  float: left;
+}
+
+.alignright {
+  margin-left: $slate-global-spacing-unit;
+  margin-bottom: $slate-global-spacing-unit;
+  float: right;
+}
