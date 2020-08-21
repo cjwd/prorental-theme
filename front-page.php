@@ -42,8 +42,8 @@
             </div>
           </div>
           <div class="col-xs-12 footer-content mail-content">
-            <div class="send-email">
-              <input type="submit" value="Search" class="submit">
+            <div class="send">
+              <input class="c-btn c-btn--primary" type="submit" value="Search" class="submit">
             </div>
           </div>
         </form>
