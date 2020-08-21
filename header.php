@@ -47,8 +47,8 @@
         <div class="container">
           <div class="row">
             <div class="col-xl-3 col-lg-2 col-sm-5 col-5">
-              <div class="logo">
-                <a href="/"><img src="img/logo/logo.png" alt="logo-image"></a>
+              <div class="site-branding logo">
+                <h1 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></h1>
               </div>
             </div>
             <!-- Primary Vertical-Menu End -->
