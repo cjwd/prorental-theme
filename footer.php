@@ -96,7 +96,7 @@
     <div class="footer-bottom off-white-bg2">
       <div class="container">
         <div class="footer-bottom-content">
-          <p class="copy-right-text">Copyright © <a href="#">Jantrik</a> All Rights Reserved.</p>
+          <p class="copy-right-text">Copyright © <a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a> All Rights Reserved.</p>
           <div class="footer-social-content">
             <ul class="social-content-list">
               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
