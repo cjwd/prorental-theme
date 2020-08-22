@@ -51,6 +51,11 @@
   float: none !important;
 }
 
+.woocommerce.center .star-rating {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .woocommerce .star-rating span::before {
   color: var(--colour-primary);
 }

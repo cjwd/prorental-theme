@@ -14,7 +14,7 @@ $product = wc_get_product($post->ID);
   <!-- Product Image End -->
   <!-- Product Content Start -->
   <div class="pro-content">
-    <div class="woocommerce product-rating">
+    <div class="woocommerce product-rating center">
       <?php echo wc_get_rating_html($product->get_average_rating()); ?>
     </div>
 
