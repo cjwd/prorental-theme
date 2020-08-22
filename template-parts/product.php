@@ -19,12 +19,10 @@ $product = wc_get_product($post->ID);
     </div>
 
     <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
-    <?php echo $product->get_price_html(); ?>
+    <?php echo $product->get_price_html() . ' per hr.'; ?>
     <div class="pro-actions">
       <div class="actions-secondary">
-        <a href="wishlist.html" data-toggle="tooltip" title="Add to Wishlist"><i class="fa fa-heart"></i></a>
-        <a class="add-cart" href="cart.html" data-toggle="tooltip" title="Add to Cart">Add To Cart</a>
-        <a href="compare.html" data-toggle="tooltip" title="Add to Compare"><i class="fa fa-signal"></i></a>
+        <a class="add-cart" href="<?php echo wc_get_cart_url() . '?add-to-cart=' . $product->id; ?>" data-toggle="tooltip" title="Add to Cart">Rent</a>
       </div>
     </div>
   </div>
