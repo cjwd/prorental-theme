@@ -22,7 +22,7 @@ $product = wc_get_product($post->ID);
     <?php echo $product->get_price_html() . ' per hr.'; ?>
     <div class="pro-actions">
       <div class="actions-secondary">
-        <a class="add-cart" href="<?php echo wc_get_cart_url() . '?add-to-cart=' . $product->id; ?>" data-toggle="tooltip" title="Add to Cart">Rent</a>
+        <a class="add-cart" href="<?php the_permalink(); ?>" data-toggle="tooltip" title="Add to Cart">Rent</a>
       </div>
     </div>
   </div>
