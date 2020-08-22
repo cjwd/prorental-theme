@@ -1084,16 +1084,13 @@ ul.ht-dropdown.dropdown-style-two li {
   background: #fff;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  border: 1px solid transparent;
   padding: 15px 15px 30px 15px;
   overflow: hidden;
 }
 .product-area .rental-single-product {
   margin-bottom: 30px;
 }
-.rental-single-product:hover {
-  border: 1px solid #ddd;
-}
+
 .pro-img {
   position: relative;
   margin-bottom: 20px;
@@ -1136,17 +1133,6 @@ ul.ht-dropdown.dropdown-style-two li {
 }
 
 .pro-actions {
-  bottom: 0px;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  left: 0;
-  opacity: 0;
-  visibility: hidden;
-  position: absolute;
   -webkit-transform: translateY(15px);
   transform: translateY(15px);
   -webkit-transition: all 0.3s ease-in-out;
@@ -1160,11 +1146,6 @@ ul.ht-dropdown.dropdown-style-two li {
   border-right: none;
 }
 
-.rental-single-product:hover .pro-actions {
-  opacity: 1;
-  visibility: visible;
-  bottom: 35px;
-}
 /* .actions-secondary a {
   display: inline-block;
 }
