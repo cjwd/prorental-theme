@@ -15,6 +15,7 @@ remove_action('woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30
 add_action('woocommerce_before_main_content', 'output_content_wrapper', 10);
 add_action('woocommerce_after_main_content', 'output_content_wrapper_end', 10);
 add_action('prorental_before_main_content', 'woocommerce_breadcrumb', 10);
+add_action('prorental_before_main_content', 'prorental_product_search', 15);
 
 add_action('woocommerce_before_shop_loop', 'prorental_layout_columns_start', 9);
 add_action('prorental_before_shop_loop', 'woocommerce_result_count', 10);

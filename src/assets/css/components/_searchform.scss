@@ -1,0 +1,17 @@
+/*=============================================
+=            #SEARCH FORM          =
+=============================================*/
+.prorental-product-search {
+  margin-bottom: var(--unit);
+}
+.search-form-fields {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-form-control {
+  .label {
+    display: none;
+  }
+}

@@ -154,3 +154,10 @@ if (!function_exists('prorental_page_title_display')) {
     echo '<h3>' . get_the_title() . '</h3>';
   }
 }
+
+if (!function_exists('prorental_product_search')) {
+  function prorental_product_search()
+  {
+    wc_get_template_part('product', 'searchform');
+  }
+}

@@ -205,6 +205,19 @@
 		"oS": 3,
 		"sct": 0
 		},
+	"/src/assets/css/components/_searchform.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dist/assets/css/components/_searchform.css",
+		"oF": 0,
+		"oS": 3,
+		"sct": 0
+		},
 	"/src/assets/css/components/_site-nav.scss": {
 		"aP": 0,
 		"bl": 0,
