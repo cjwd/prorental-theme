@@ -158,6 +158,8 @@ if (!function_exists('prorental_page_title_display')) {
 if (!function_exists('prorental_product_search')) {
   function prorental_product_search()
   {
-    wc_get_template_part('product', 'searchform');
+    if (is_shop()) {
+      wc_get_template_part('product', 'searchform');
+    }
   }
 }
