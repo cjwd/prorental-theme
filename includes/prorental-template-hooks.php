@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * Associated functions can be found in prorental-template-functions.php
+ */
+
 namespace Slate;
 
 /**
