@@ -109,7 +109,7 @@
                         <div class="cart-footer fix">
                           <h5>total :<span class="f-right">$698.00</span></h5>
                           <div class="cart-actions">
-                            <a class="checkout" href="checkout.html">Checkout</a>
+                            <a class="c-btn c-btn--primary" href="checkout.html">Checkout</a>
                           </div>
                         </div>
                         <!-- Cart Footer Inner End -->

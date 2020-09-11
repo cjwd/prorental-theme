@@ -567,8 +567,7 @@ ul.ht-dropdown.dropdown-style-two li {
 }
 
 .mean-container .mean-nav ul li a.mean-expand {
-  border-color: currentcolor currentcolor hsla(0, 0%, 100%, 0.2)
-    hsla(0, 0%, 100%, 0.3);
+  border-color: currentcolor currentcolor hsla(0, 0%, 100%, 0.2) hsla(0, 0%, 100%, 0.3);
 }
 
 .mobile-menu ul li ul li a {
@@ -704,17 +703,6 @@ ul.ht-dropdown.dropdown-style-two li {
   text-transform: uppercase;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-}
-
-.checkout {
-  background: var(--colour-primary);
-  color: #fff;
-}
-
-.checkout:hover {
-  background-color: var(--colour-primary);
-  border-color: transparent;
-  color: #fff;
 }
 
 .del-icone {
@@ -1206,13 +1194,8 @@ ul.ht-dropdown.dropdown-style-two li {
   border-bottom: 0px solid #eee;
 }
 
-.random-pro-active.slider-right-content
-  .owl-item:not(.active)
-  + .owl-item.active
-  .rental-single-product,
-.random-pro-active.slider-right-content
-  .owl-item.active:first-child
-  .rental-single-product {
+.random-pro-active.slider-right-content .owl-item:not(.active) + .owl-item.active .rental-single-product,
+.random-pro-active.slider-right-content .owl-item.active:first-child .rental-single-product {
   border-left: 0px solid #eee;
 }
 .brand-banner.owl-carousel .owl-item img {
@@ -3993,8 +3976,7 @@ legend {
   max-width: 1340px;
 }
 .box-wrapper {
-  background: rgba(0, 0, 0, 0) url('../../img/banner/pattern.png') repeat fixed
-    0 0;
+  background: rgba(0, 0, 0, 0) url('../../img/banner/pattern.png') repeat fixed 0 0;
 }
 .box-layout {
   background: #fff none repeat scroll 0 0;
