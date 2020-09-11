@@ -31,11 +31,8 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji',
-    'Segoe UI Emoji', 'Segoe UI Symbol';
-  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
-    'Liberation Mono', 'Courier New', monospace;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
 }
 *,
 ::after,
@@ -68,9 +65,7 @@ section {
 }
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-    'Segoe UI Symbol';
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -460,8 +455,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
-    'Courier New', monospace;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
 }
 code {
   font-size: 87.5%;
@@ -1818,22 +1812,14 @@ select.form-control:focus::-ms-value {
 .form-control-plaintext.form-control-sm,
 .input-group-lg > .form-control-plaintext.form-control,
 .input-group-lg > .input-group-append > .form-control-plaintext.btn,
-.input-group-lg
-  > .input-group-append
-  > .form-control-plaintext.input-group-text,
+.input-group-lg > .input-group-append > .form-control-plaintext.input-group-text,
 .input-group-lg > .input-group-prepend > .form-control-plaintext.btn,
-.input-group-lg
-  > .input-group-prepend
-  > .form-control-plaintext.input-group-text,
+.input-group-lg > .input-group-prepend > .form-control-plaintext.input-group-text,
 .input-group-sm > .form-control-plaintext.form-control,
 .input-group-sm > .input-group-append > .form-control-plaintext.btn,
-.input-group-sm
-  > .input-group-append
-  > .form-control-plaintext.input-group-text,
+.input-group-sm > .input-group-append > .form-control-plaintext.input-group-text,
 .input-group-sm > .input-group-prepend > .form-control-plaintext.btn,
-.input-group-sm
-  > .input-group-prepend
-  > .form-control-plaintext.input-group-text {
+.input-group-sm > .input-group-prepend > .form-control-plaintext.input-group-text {
   padding-right: 0;
   padding-left: 0;
 }
@@ -1849,13 +1835,9 @@ select.form-control:focus::-ms-value {
   border-radius: 0.2rem;
 }
 .input-group-sm > .input-group-append > select.btn:not([size]):not([multiple]),
-.input-group-sm
-  > .input-group-append
-  > select.input-group-text:not([size]):not([multiple]),
+.input-group-sm > .input-group-append > select.input-group-text:not([size]):not([multiple]),
 .input-group-sm > .input-group-prepend > select.btn:not([size]):not([multiple]),
-.input-group-sm
-  > .input-group-prepend
-  > select.input-group-text:not([size]):not([multiple]),
+.input-group-sm > .input-group-prepend > select.input-group-text:not([size]):not([multiple]),
 .input-group-sm > select.form-control:not([size]):not([multiple]),
 select.form-control-sm:not([size]):not([multiple]) {
   height: calc(1.8125rem + 2px);
@@ -1872,13 +1854,9 @@ select.form-control-sm:not([size]):not([multiple]) {
   border-radius: 0.3rem;
 }
 .input-group-lg > .input-group-append > select.btn:not([size]):not([multiple]),
-.input-group-lg
-  > .input-group-append
-  > select.input-group-text:not([size]):not([multiple]),
+.input-group-lg > .input-group-append > select.input-group-text:not([size]):not([multiple]),
 .input-group-lg > .input-group-prepend > select.btn:not([size]):not([multiple]),
-.input-group-lg
-  > .input-group-prepend
-  > select.input-group-text:not([size]):not([multiple]),
+.input-group-lg > .input-group-prepend > select.input-group-text:not([size]):not([multiple]),
 .input-group-lg > select.form-control:not([size]):not([multiple]),
 select.form-control-lg:not([size]):not([multiple]) {
   height: calc(2.875rem + 2px);
@@ -1890,14 +1868,14 @@ select.form-control-lg:not([size]):not([multiple]) {
   display: block;
   margin-top: 0.25rem;
 }
-.form-row {
+/* .form-row {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-right: -5px;
   margin-left: -5px;
-}
+} */
 .form-row > .col,
 .form-row > [class*='col-'] {
   padding-right: 5px;
@@ -2002,15 +1980,11 @@ select.form-control-lg:not([size]):not([multiple]) {
   display: block;
 }
 .custom-control-input.is-valid:checked ~ .custom-control-label::before,
-.was-validated
-  .custom-control-input:valid:checked
-  ~ .custom-control-label::before {
+.was-validated .custom-control-input:valid:checked ~ .custom-control-label::before {
   background-color: #34ce57;
 }
 .custom-control-input.is-valid:focus ~ .custom-control-label::before,
-.was-validated
-  .custom-control-input:valid:focus
-  ~ .custom-control-label::before {
+.was-validated .custom-control-input:valid:focus ~ .custom-control-label::before {
   box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
 }
 .custom-file-input.is-valid ~ .custom-file-label,
@@ -2100,15 +2074,11 @@ select.form-control-lg:not([size]):not([multiple]) {
   display: block;
 }
 .custom-control-input.is-invalid:checked ~ .custom-control-label::before,
-.was-validated
-  .custom-control-input:invalid:checked
-  ~ .custom-control-label::before {
+.was-validated .custom-control-input:invalid:checked ~ .custom-control-label::before {
   background-color: #e4606d;
 }
 .custom-control-input.is-invalid:focus ~ .custom-control-label::before,
-.was-validated
-  .custom-control-input:invalid:focus
-  ~ .custom-control-label::before {
+.was-validated .custom-control-input:invalid:focus ~ .custom-control-label::before {
   box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
 }
 .custom-file-input.is-invalid ~ .custom-file-label,
@@ -2214,8 +2184,7 @@ select.form-control-lg:not([size]):not([multiple]) {
   font-size: 1rem;
   line-height: 1.5;
   border-radius: 0.25rem;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 @media screen and (prefers-reduced-motion: reduce) {
   .btn {
@@ -3244,12 +3213,8 @@ input[type='submit'].btn-block {
 .input-group-text input[type='radio'] {
   margin-top: 0;
 }
-.input-group
-  > .input-group-append:last-child
-  > .btn:not(:last-child):not(.dropdown-toggle),
-.input-group
-  > .input-group-append:last-child
-  > .input-group-text:not(:last-child),
+.input-group > .input-group-append:last-child > .btn:not(:last-child):not(.dropdown-toggle),
+.input-group > .input-group-append:last-child > .input-group-text:not(:last-child),
 .input-group > .input-group-append:not(:last-child) > .btn,
 .input-group > .input-group-append:not(:last-child) > .input-group-text,
 .input-group > .input-group-prepend > .btn,
@@ -3260,9 +3225,7 @@ input[type='submit'].btn-block {
 .input-group > .input-group-append > .btn,
 .input-group > .input-group-append > .input-group-text,
 .input-group > .input-group-prepend:first-child > .btn:not(:first-child),
-.input-group
-  > .input-group-prepend:first-child
-  > .input-group-text:not(:first-child),
+.input-group > .input-group-prepend:first-child > .input-group-text:not(:first-child),
 .input-group > .input-group-prepend:not(:first-child) > .btn,
 .input-group > .input-group-prepend:not(:first-child) > .input-group-text {
   border-top-left-radius: 0;
@@ -3340,24 +3303,16 @@ input[type='submit'].btn-block {
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E");
 }
-.custom-checkbox
-  .custom-control-input:indeterminate
-  ~ .custom-control-label::before {
+.custom-checkbox .custom-control-input:indeterminate ~ .custom-control-label::before {
   background-color: #007bff;
 }
-.custom-checkbox
-  .custom-control-input:indeterminate
-  ~ .custom-control-label::after {
+.custom-checkbox .custom-control-input:indeterminate ~ .custom-control-label::after {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 4'%3E%3Cpath stroke='%23fff' d='M0 2h4'/%3E%3C/svg%3E");
 }
-.custom-checkbox
-  .custom-control-input:disabled:checked
-  ~ .custom-control-label::before {
+.custom-checkbox .custom-control-input:disabled:checked ~ .custom-control-label::before {
   background-color: rgba(0, 123, 255, 0.5);
 }
-.custom-checkbox
-  .custom-control-input:disabled:indeterminate
-  ~ .custom-control-label::before {
+.custom-checkbox .custom-control-input:disabled:indeterminate ~ .custom-control-label::before {
   background-color: rgba(0, 123, 255, 0.5);
 }
 .custom-radio .custom-control-label::before {
@@ -3369,9 +3324,7 @@ input[type='submit'].btn-block {
 .custom-radio .custom-control-input:checked ~ .custom-control-label::after {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='3' fill='%23fff'/%3E%3C/svg%3E");
 }
-.custom-radio
-  .custom-control-input:disabled:checked
-  ~ .custom-control-label::before {
+.custom-radio .custom-control-input:disabled:checked ~ .custom-control-label::before {
   background-color: rgba(0, 123, 255, 0.5);
 }
 .custom-select {
@@ -3382,9 +3335,7 @@ input[type='submit'].btn-block {
   line-height: 1.5;
   color: #495057;
   vertical-align: middle;
-  background: #fff
-    url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E")
-    no-repeat right 0.75rem center;
+  background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right 0.75rem center;
   background-size: 8px 10px;
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
@@ -3395,8 +3346,7 @@ input[type='submit'].btn-block {
 .custom-select:focus {
   border-color: #80bdff;
   outline: 0;
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075),
-    0 0 5px rgba(128, 189, 255, 0.5);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075), 0 0 5px rgba(128, 189, 255, 0.5);
 }
 .custom-select:focus::-ms-value {
   color: #495057;
@@ -4212,18 +4162,10 @@ input[type='submit'].btn-block {
   .card-group > .card:not(:first-child):not(:last-child):not(:only-child) {
     border-radius: 0;
   }
-  .card-group
-    > .card:not(:first-child):not(:last-child):not(:only-child)
-    .card-footer,
-  .card-group
-    > .card:not(:first-child):not(:last-child):not(:only-child)
-    .card-header,
-  .card-group
-    > .card:not(:first-child):not(:last-child):not(:only-child)
-    .card-img-bottom,
-  .card-group
-    > .card:not(:first-child):not(:last-child):not(:only-child)
-    .card-img-top {
+  .card-group > .card:not(:first-child):not(:last-child):not(:only-child) .card-footer,
+  .card-group > .card:not(:first-child):not(:last-child):not(:only-child) .card-header,
+  .card-group > .card:not(:first-child):not(:last-child):not(:only-child) .card-img-bottom,
+  .card-group > .card:not(:first-child):not(:last-child):not(:only-child) .card-img-top {
     border-radius: 0;
   }
 }
@@ -4645,16 +4587,7 @@ input[type='submit'].btn-block {
   }
 }
 .progress-bar-striped {
-  background-image: linear-gradient(
-    45deg,
-    rgba(255, 255, 255, 0.15) 25%,
-    transparent 25%,
-    transparent 50%,
-    rgba(255, 255, 255, 0.15) 50%,
-    rgba(255, 255, 255, 0.15) 75%,
-    transparent 75%,
-    transparent
-  );
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-size: 1rem 1rem;
 }
 .progress-bar-animated {
@@ -5021,9 +4954,7 @@ button.close {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-    'Segoe UI Symbol';
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -5131,9 +5062,7 @@ button.close {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-    'Segoe UI Symbol';
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -5341,9 +5270,7 @@ button.close {
   -webkit-transform: translateX(0);
   transform: translateX(0);
 }
-@supports (
-  (-webkit-transform-style: preserve-3d) or (transform-style: preserve-3d)
-) {
+@supports ((-webkit-transform-style: preserve-3d) or (transform-style: preserve-3d)) {
   .carousel-item-next.carousel-item-left,
   .carousel-item-prev.carousel-item-right {
     -webkit-transform: translate3d(0, 0, 0);
@@ -5355,9 +5282,7 @@ button.close {
   -webkit-transform: translateX(100%);
   transform: translateX(100%);
 }
-@supports (
-  (-webkit-transform-style: preserve-3d) or (transform-style: preserve-3d)
-) {
+@supports ((-webkit-transform-style: preserve-3d) or (transform-style: preserve-3d)) {
   .active.carousel-item-right,
   .carousel-item-next {
     -webkit-transform: translate3d(100%, 0, 0);
@@ -5369,9 +5294,7 @@ button.close {
   -webkit-transform: translateX(-100%);
   transform: translateX(-100%);
 }
-@supports (
-  (-webkit-transform-style: preserve-3d) or (transform-style: preserve-3d)
-) {
+@supports ((-webkit-transform-style: preserve-3d) or (transform-style: preserve-3d)) {
   .active.carousel-item-left,
   .carousel-item-prev {
     -webkit-transform: translate3d(-100%, 0, 0);
@@ -5400,9 +5323,7 @@ button.close {
   -webkit-transform: translateX(0);
   transform: translateX(0);
 }
-@supports (
-  (-webkit-transform-style: preserve-3d) or (transform-style: preserve-3d)
-) {
+@supports ((-webkit-transform-style: preserve-3d) or (transform-style: preserve-3d)) {
   .carousel-fade .active.carousel-item-left,
   .carousel-fade .active.carousel-item-prev,
   .carousel-fade .carousel-item-next,
@@ -8008,8 +7929,7 @@ button.bg-dark:hover {
   }
 }
 .text-monospace {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
-    'Courier New', monospace;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
 }
 .text-justify {
   text-align: justify !important;

@@ -2378,10 +2378,6 @@ p.checkout-coupon input[type='submit']:hover {
   width: inherit;
 }
 
-.form-row > label {
-  margin-top: 7px;
-}
-
 p.lost-password {
   margin-top: 15px;
 }
