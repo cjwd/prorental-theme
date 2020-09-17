@@ -608,70 +608,7 @@ a.button.extra-small i {
 .text-theme {
   color: #f10;
 }
-/*************************
-        Input
-*************************/
-select {
-  width: 100%;
-  background: #eceff8;
-  border: 2px solid #eceff8;
-  height: 45px;
-  padding-left: 10px;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  font-size: 14px;
-  color: #626262;
-  outline: none;
-}
-option {
-  background: #fff none repeat scroll 0 0;
-  border: 0 solid #626262;
-  font-size: 14px;
-  padding: 5px 0 5px 10px;
-  font-family: 'Rubik', sans-serif !important;
-}
-input:focus {
-  background: #fff;
-  border: none;
-}
-textarea {
-  resize: vertical;
-  background: #eceff8;
-  border: 2px solid #eceff8;
-  padding: 10px;
-  width: 100%;
-  font-size: 14px;
-}
-textarea:focus {
-  background: transparent;
-  outline: none;
-}
-input:-moz-placeholder,
-textarea:-moz-placeholder {
-  opacity: 1;
-  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=100)';
-}
-input::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder {
-  opacity: 1;
-  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=100)';
-}
-input::-moz-placeholder,
-textarea::-moz-placeholder {
-  opacity: 1;
-  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=100)';
-}
-input:-ms-input-placeholder,
-textarea:-ms-input-placeholder {
-  opacity: 1;
-  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=100)';
-}
-input[type='text']#email-two::-webkit-input-placeholder {
-  color: #bbb;
-}
-.input-group.divcenter.input-group .form-control {
-  padding-left: 0px;
-}
+
 /*************************
         back-to-top
 *************************/
@@ -1700,16 +1637,10 @@ input[type='text']#email-two::-webkit-input-placeholder {
   position: absolute;
   -webkit-transform: translate3d(0px, 0px, 0px);
   transform: translate3d(0px, 0px, 0px);
-  -webkit-transition: opacity 0.2s ease-in-out 0s,
-    visibility 0.2s ease-in-out 0s,
-    -webkit-transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24) 0s;
-  transition: opacity 0.2s ease-in-out 0s, visibility 0.2s ease-in-out 0s,
-    -webkit-transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24) 0s;
-  transition: opacity 0.2s ease-in-out 0s, visibility 0.2s ease-in-out 0s,
-    transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24) 0s;
-  transition: opacity 0.2s ease-in-out 0s, visibility 0.2s ease-in-out 0s,
-    transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24) 0s,
-    -webkit-transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24) 0s;
+  -webkit-transition: opacity 0.2s ease-in-out 0s, visibility 0.2s ease-in-out 0s, -webkit-transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24) 0s;
+  transition: opacity 0.2s ease-in-out 0s, visibility 0.2s ease-in-out 0s, -webkit-transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24) 0s;
+  transition: opacity 0.2s ease-in-out 0s, visibility 0.2s ease-in-out 0s, transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24) 0s;
+  transition: opacity 0.2s ease-in-out 0s, visibility 0.2s ease-in-out 0s, transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24) 0s, -webkit-transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24) 0s;
   visibility: hidden;
 }
 .socile-icon-tooltip [data-tooltip]:hover::before,
