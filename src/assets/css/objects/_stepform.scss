@@ -1,0 +1,39 @@
+.o-step {
+  position: relative;
+  padding-left: 36px;
+  padding-right: 24px;
+}
+
+.o-step__container {
+  position: relative;
+}
+.o-step__container::before {
+  content: '';
+  position: absolute;
+  left: -18px;
+  top: 0;
+  height: 100%;
+  border-left: 1px solid #888;
+}
+
+.o-step:last-of-type .o-step__container::before {
+  border-left: 0;
+}
+
+.o-step__title {
+  font-size: 1.25em;
+}
+
+.o-step__title::before {
+  counter-increment: form-step;
+  content: ' ' counter(form-step) '.';
+  position: absolute;
+  width: 36px;
+  left: -18px;
+  text-align: center;
+  transform: translateX(50%);
+}
+
+.o-step__description {
+  margin-bottom: 24px;
+}
