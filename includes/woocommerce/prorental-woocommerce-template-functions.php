@@ -163,3 +163,139 @@ if (!function_exists('prorental_product_search')) {
     }
   }
 }
+
+if (!function_exists('custom_billing_checkout_fields')) {
+  function custom_billing_checkout_fields($fields)
+  {
+    // Move email address to the top
+    $fields['billing']['billing_email']['priority'] = 5;
+    $fields['billing']['billing_phone']['priority'] = 25;
+
+    // Move Account fields into billing fields group
+    // 1. Assign fields
+    $fields['billing']['account_username'] = $fields['account']['account_username'];
+    $fields['billing']['account_password'] = $fields['account']['account_password'];
+
+    // 2. Remove previous fields
+    unset($fields['account']['account_username']);
+    unset($fields['account']['account_password']);
+
+    $fields['billing']['account_username']['priority'] = 6;
+    $fields['billing']['account_password']['priority'] = 7;
+
+
+    $fields['billing']['billing_website'] = [
+      'label'   => __('Website', 'woocommerce'),
+      'placeholder' => _x('Website', 'placeholder', 'woocommerce'),
+      'type'  => 'url',
+      'required'  => false,
+      'class' =>  array('form-row-wide'),
+      'clear' => false,
+      'priority' => 32
+    ];
+
+    $fields['billing']['billing_job'] = [
+      'label'   => __('Job Title', 'woocommerce'),
+      'placeholder' => _x('Job Title', 'placeholder', 'woocommerce'),
+      'required'  => true,
+      'class' =>  array('form-row-wide'),
+      'clear' => false,
+      'priority' => 31
+    ];
+
+    $fields['billing']['billing_idtype'] = [
+      'label'   => __('ID Type', 'woocommerce'),
+      'placeholder' => _x('ID Type', 'placeholder', 'woocommerce'),
+      'required'  => true,
+      'class' =>  array('form-row-wide'),
+      'clear' => true,
+      'type' => 'radio',
+      'options' => [
+        'pp'  => __('Passport', 'woocommerce'),
+        'dp'  => __('Driver\'s Permit', 'woocommerce'),
+        'id'  => __('National ID', 'woocommerce')
+      ],
+      'default' => 'id',
+      'priority' => 21
+    ];
+
+    $fields['billing']['billing_id'] = [
+      'label'   => __('ID', 'woocommerce'),
+      'placeholder' => _x('Driver\'s Permit, Passport etc', 'placeholder', 'woocommerce'),
+      'required'  => true,
+      'class' =>  array('form-row-wide'),
+      'clear' => false,
+      'priority' => 22
+    ];
+
+    return $fields;
+  }
+}
+
+if (!function_exists('secondary_contact_checkout_fields')) {
+  function secondary_contact_checkout_fields()
+  {
+    echo '<fieldset class="o-step">';
+    echo '<legend class="u-hidden-visually">' . __('Secondary Contact') . '</legend>';
+    echo '<div class="o-step__heading"><div class="o-step__title">' . __('Secondary Contact') . '</div></div>';
+    echo '<div class="o-step__container">
+            <p class="o-step__description">Description here....</p>
+            <div class="o-step__content">';
+    woocommerce_form_field('contact_fname', [
+      'type'  => 'text',
+      'required'  => true,
+      'class' =>  ['form-row-first'],
+      'label' =>  __('First Name', 'woocommerce'),
+    ], WC()->checkout->get_value('contact_fname'));
+
+    woocommerce_form_field('contact_lname', [
+      'type'  => 'text',
+      'required'  => true,
+      'class' =>  ['form-row-last'],
+      'label' =>  __('Last Name', 'woocommerce'),
+    ], WC()->checkout->get_value('contact_lname'));
+
+    woocommerce_form_field('contact_email', [
+      'type'  => 'email',
+      'required'  => true,
+      'class' =>  ['form-row-wide'],
+      'label' =>  __('Email', 'woocommerce'),
+    ], WC()->checkout->get_value('contact_email'));
+
+    woocommerce_form_field('contact_phone', [
+      'type'  => 'tel',
+      'required'  => true,
+      'class' =>  ['form-row-wide'],
+      'label' =>  __('Phone', 'woocommerce'),
+    ], WC()->checkout->get_value('contact_phone'));
+
+    woocommerce_form_field('contact_job', [
+      'type'  => 'text',
+      'required'  => true,
+      'class' =>  ['form-row-wide'],
+      'label' =>  __('Job Title / Position', 'woocommerce'),
+    ], WC()->checkout->get_value('contact_job'));
+
+    woocommerce_form_field('contact_idtype', [
+      'type' => 'radio',
+      'required'  => true,
+      'label' => __('ID type', 'woocommerce'),
+      'options'  => [
+        'pp' => __('Passport', 'woocommerce'),
+        'dp' => __('Driver\'s Permit', 'woocommerce'),
+        'id' => __('National ID', 'woocommerce'),
+      ],
+      'default' => 'id'
+    ], WC()->checkout->get_value('contact_idtype'));
+
+    woocommerce_form_field('contact_id', [
+      'type' => 'text',
+      'required'  => true,
+      'label' => __('ID', 'wooocommerce'),
+      'class' => ['form-row-wide']
+    ], WC()->checkout->get_value('contact_id'));
+    echo '</div><!-- / .o-step__content -->';
+    echo '</div>';
+    echo '</fieldset>';
+  }
+}

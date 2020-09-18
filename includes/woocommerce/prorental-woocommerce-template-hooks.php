@@ -44,9 +44,23 @@ add_action('woocommerce_before_account_navigation', 'prorental_dashboard_upper_i
 add_action('woocommerce_account_content', 'prorental_page_title_display', 5);
 
 /**
+ * Checkout
+ */
+remove_action('woocommerce_checkout_order_review', 'woocommerce_checkout_payment', 20);
+
+add_action('woocommerce_checkout_after_customer_details', 'woocommerce_checkout_payment', 10);
+
+/**
  * Filters
  */
 add_filter('woocommerce_show_page_title', 'prorental_hide_shop_page_title');
 add_filter('loop_shop_per_page', 'prorental_loop_shop_per_page');
 add_filter('woocommerce_breadcrumb_defaults', 'prorental_add_breadcrumb_wrapper');
 add_filter('woocommerce_breadcrumb_home_url', 'prorental_custom_breadrumb_home_url');
+
+/**
+ * Checkout Filters
+ */
+// Adding Custom Shipping and Billing Fields
+add_filter('woocommerce_checkout_fields', 'custom_billing_checkout_fields');
+add_action('prorental_after_checkout_billing_form', 'secondary_contact_checkout_fields');
