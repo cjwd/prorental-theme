@@ -1,0 +1,54 @@
+.o-toggle-wrapper > label {
+  display: block;
+  margin-bottom: 24px;
+}
+
+.o-toggle {
+  margin-bottom: 36px;
+}
+
+.o-toggle__option {
+  display: inline;
+}
+
+/* Hides the radio button */
+.o-toggle__option input {
+  position: absolute !important;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  width: 1px;
+  border: 0;
+  overflow: hidden;
+}
+
+/* The label acts as the control */
+.o-toggle__option span {
+  margin-right: -8px;
+  padding: 12px 24px;
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  line-height: 1;
+  text-align: center;
+  border: 2px solid #82589f;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  pointer-events: none;
+}
+
+.o-toggle__option:first-of-type span {
+  border-radius: 4px 0 0 4px;
+}
+
+.o-toggle__option:last-of-type span {
+  border-radius: 0 4px 4px 0;
+}
+
+.o-toggle__option:hover {
+  cursor: pointer;
+}
+
+.o-toggle__option input:checked + span {
+  background-color: #82589f;
+  color: rgba(255, 255, 255, 0.8);
+}
