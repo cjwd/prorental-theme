@@ -1,0 +1,30 @@
+.o-floating-label-text-input {
+  position: relative;
+  margin-left: 6px;
+  margin-right: 6px;
+  margin-bottom: 1.5em;
+}
+
+.o-floating-label-text-input.u-float-left {
+  width: calc(50% - 12px);
+}
+.o-floating-label-text-input label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-left: 17px;
+  font-size: 1em;
+  line-height: 1.375;
+  transform: translateY(0.75em);
+  transform-origin: top left;
+  color: #646970;
+  cursor: text;
+  transition: transform 0.2s ease;
+}
+
+.o-floating-label-text-input.is-active input {
+  padding: 1.5em 0 0.25em 16px;
+}
+.o-floating-label-text-input.is-active label {
+  transform: translateY(4px) scale(0.75);
+}
