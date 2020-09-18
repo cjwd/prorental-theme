@@ -7,7 +7,7 @@
 		"uuidString": "0434B1E7-75E2-41D3-8A02-D05948395EB5"
 		}
 	],
-"creatorBuild": "32147",
+"creatorBuild": "32186",
 "files": {
 	"/.gitignore": {
 		"cB": 0,
@@ -105,6 +105,14 @@
 		"oO": 0,
 		"oS": 1
 		},
+	"/page-customer-login.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/dist/page-customer-login.php",
+		"oF": 0
+		},
 	"/README.md": {
 		"cB": 0,
 		"cS": 0,
@@ -201,6 +209,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/dist/assets/css/components/_buttons.css",
+		"oF": 0,
+		"oS": 3,
+		"sct": 0
+		},
+	"/src/assets/css/components/_checkoutform.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dist/assets/css/components/_checkoutform.css",
 		"oF": 0,
 		"oS": 3,
 		"sct": 0
@@ -361,6 +382,19 @@
 		"oS": 3,
 		"sct": 0
 		},
+	"/src/assets/css/objects/_floatinglabel.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dist/assets/css/objects/_floatinglabel.css",
+		"oF": 0,
+		"oS": 3,
+		"sct": 0
+		},
 	"/src/assets/css/objects/_grid.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -374,6 +408,19 @@
 		"oS": 3,
 		"sct": 0
 		},
+	"/src/assets/css/objects/_stepform.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dist/assets/css/objects/_stepform.css",
+		"oF": 0,
+		"oS": 3,
+		"sct": 0
+		},
 	"/src/assets/css/objects/_tables.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -383,6 +430,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/dist/assets/css/objects/_tables.css",
+		"oF": 0,
+		"oS": 3,
+		"sct": 0
+		},
+	"/src/assets/css/objects/_toggle.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dist/assets/css/objects/_toggle.css",
 		"oF": 0,
 		"oS": 3,
 		"sct": 0
@@ -487,6 +547,58 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/dist/assets/css/utilities/_alignment.css",
+		"oF": 0,
+		"oS": 3,
+		"sct": 0
+		},
+	"/src/assets/css/utilities/_clearfix.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dist/assets/css/utilities/_clearfix.css",
+		"oF": 0,
+		"oS": 3,
+		"sct": 0
+		},
+	"/src/assets/css/utilities/_flexbox.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dist/assets/css/utilities/_flexbox.css",
+		"oF": 0,
+		"oS": 3,
+		"sct": 0
+		},
+	"/src/assets/css/utilities/_hidden.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dist/assets/css/utilities/_hidden.css",
+		"oF": 0,
+		"oS": 3,
+		"sct": 0
+		},
+	"/src/assets/css/utilities/_widths.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dist/assets/css/utilities/_widths.css",
 		"oF": 0,
 		"oS": 3,
 		"sct": 0
@@ -620,6 +732,25 @@
 		"oAP": "/dist/assets/css/vendor/style.css",
 		"oF": 1,
 		"oS": 3
+		},
+	"/src/assets/css/woocommerce": {
+		"ft": 65536,
+		"oA": 1,
+		"oAP": "/dist/assets/css/woocommerce",
+		"oF": 0
+		},
+	"/src/assets/css/woocommerce/_forms.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dist/assets/css/woocommerce/_forms.css",
+		"oF": 0,
+		"oS": 3,
+		"sct": 0
 		},
 	"/src/assets/fonts/fontawesome-webfont.eot": {
 		"cB": 0,
@@ -2117,6 +2248,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"default-case-last": {
+			"active": 0,
+			"optionString": ""
+			},
 		"default-param-last": {
 			"active": 0,
 			"optionString": ""
@@ -2529,6 +2664,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"no-loss-of-precision": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-magic-numbers": {
 			"active": 0,
 			"optionString": "{'ignore': [], 'ignoreArrayIndexes': true, 'enforceConst': false, 'detectObjects': false}"
@@ -2644,6 +2783,10 @@
 		"no-regex-spaces": {
 			"active": 1,
 			"optionString": ""
+			},
+		"no-restricted-exports": {
+			"active": 0,
+			"optionString": "{'restrictedNamedExports': []}"
 			},
 		"no-restricted-globals": {
 			"active": 0,
@@ -2788,6 +2931,10 @@
 		"no-use-before-define": {
 			"active": 0,
 			"optionString": "{'functions': true, 'classes': true, 'variables': true}"
+			},
+		"no-useless-backreference": {
+			"active": 0,
+			"optionString": ""
 			},
 		"no-useless-call": {
 			"active": 0,
