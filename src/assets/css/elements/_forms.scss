@@ -1,10 +1,30 @@
 /*=============================================
 =            Form Elements           =
 =============================================*/
-input,
+input[type='text'],
+input[type='email'],
+input[type='password'],
+textarea,
+select,
 .input-text {
+  --border-color: #888;
+  --text-color: #2b2d2f;
+  --border-radius: 4px;
   width: 100%;
-  padding: calc(var(--unit) / 2) var(--unit);
-  border: 1px solid #e8e8e8;
-  font-size: 1rem;
+  padding: 0.75em 1em;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  font-size: 0.75rem;
+  color: var(--text-color);
+
+  &:focus {
+    --border-color: var(--colour-primary);
+  }
+}
+
+input[type='radio'] + label {
+  margin-left: 0.75em;
+  margin-right: var(--unit);
+  margin-bottom: 0;
+  line-height: 1 !important;
 }
