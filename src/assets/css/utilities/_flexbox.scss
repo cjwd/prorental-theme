@@ -1,0 +1,37 @@
+.u-flex {
+  display: flex;
+}
+
+.u-inline-flex {
+  display: inline-flex;
+}
+
+// Flex Direction
+.u-flex-row {
+  flex-direction: row;
+}
+
+.u-flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.u-flex-col {
+  flex-direction: column;
+}
+
+.u-flex-col-reverse {
+  flex-direction: column-reverse;
+}
+
+// Flex Wrap
+.u-flex-wrap {
+  flex-wrap: wrap;
+}
+
+.u-flex-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
+.u-flex-no-wrap {
+  flex-wrap: nowrap;
+}

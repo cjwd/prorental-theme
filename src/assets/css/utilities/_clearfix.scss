@@ -1,0 +1,9 @@
+.u-clearfix:after {
+  content: '' !important;
+  display: block !important;
+  clear: both !important;
+}
+
+.u-clearboth {
+  clear: both;
+}

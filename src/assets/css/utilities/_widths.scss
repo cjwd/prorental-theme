@@ -1,0 +1,12 @@
+$widths: (1, 2, 3, 4, 5) !default;
+$width-delimiter: \/ !default;
+@mixin widths($columns) {
+  @each $denominator in $columns {
+    @for $numerator from 1 through $denominator {
+      .u-w-#{$numerator}#{$width-delimiter}#{$denominator} {
+        width: ($numerator / $denominator) * 100% !important;
+      }
+    }
+  }
+}
+@include widths($widths);
