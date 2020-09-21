@@ -1452,203 +1452,16 @@
 		"oT": 1,
 		"q": 100
 		},
-	"/src/assets/js/ajax-mail.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/dist/assets/js/ajax-mail-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/src/assets/js/bootstrap.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/dist/assets/js/bootstrap.min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/src/assets/js/customizer.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/dist/assets/js/customizer-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/src/assets/js/jquery-ui.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/dist/assets/js/jquery-ui.min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/src/assets/js/jquery.countdown.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/dist/assets/js/jquery.countdown.min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/src/assets/js/jquery.fancybox.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/dist/assets/js/jquery.fancybox.min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/src/assets/js/jquery.meanmenu.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/dist/assets/js/jquery.meanmenu.min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/src/assets/js/jquery.nivo.slider.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/dist/assets/js/jquery.nivo.slider-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/src/assets/js/jquery.scrollUp.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/dist/assets/js/jquery.scrollUp-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
 	"/src/assets/js/main.js": {
-		"bF": 0,
+		"bF": 4,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/dist/assets/js/main-min.js",
+		"oAP": "/dist/assets/js/main.js",
 		"oF": 0,
 		"sC": 3,
-		"tS": 0
-		},
-	"/src/assets/js/owl.carousel.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/dist/assets/js/owl.carousel.min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/src/assets/js/plugins.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/dist/assets/js/plugins-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/src/assets/js/popper.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/dist/assets/js/popper-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/src/assets/js/scripts.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/dist/assets/js/scripts-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/src/assets/js/slick.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/dist/assets/js/slick.min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/src/assets/js/vendor/jquery-1.12.4.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/dist/assets/js/vendor/jquery-1.12.4.min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/src/assets/js/vendor/modernizr-2.8.3.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/dist/assets/js/vendor/modernizr-2.8.3.min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/src/assets/js/wow.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/dist/assets/js/wow.min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
+		"tS": 1
 		},
 	"/style.css": {
 		"aP": 0,
@@ -1673,15 +1486,15 @@
 		"oF": 0
 		},
 	"/webpack.mix.js": {
-		"bF": 0,
+		"bF": 4,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 1,
-		"oAP": "/dist/webpack.mix-min.js",
-		"oF": 1,
+		"oA": 0,
+		"oAP": "/dist/webpack.mix.js",
+		"oF": 0,
 		"sC": 3,
-		"tS": 0
+		"tS": 1
 		},
 	"/woocommerce": {
 		"ft": 65536,
@@ -3635,16 +3448,16 @@
 		},
 	"languageDefaultsJS": {
 		"autoOutputAction": 0,
-		"autoOutputPathFilenamePattern": "*-min.js",
+		"autoOutputPathFilenamePattern": "*.js",
 		"autoOutputPathRelativePath": "/min",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
-		"bundleFormat": 0,
+		"bundleFormat": 4,
 		"createSourceMap": 0,
 		"minifyOutput": 1,
 		"syntaxCheckerStyle": 3,
-		"transpilerStyle": 0
+		"transpilerStyle": 1
 		},
 	"languageDefaultsJSON": {
 		"autoOutputAction": 1,
