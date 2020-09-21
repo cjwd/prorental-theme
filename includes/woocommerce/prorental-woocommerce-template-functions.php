@@ -246,10 +246,10 @@ if (!function_exists('secondary_contact_checkout_fields')) {
   function secondary_contact_checkout_fields()
   {
     echo '<fieldset class="o-step">';
-    echo '<legend class="u-hidden-visually">' . __('Secondary Contact') . '</legend>';
-    echo '<div class="o-step__heading"><div class="o-step__title">' . __('Secondary Contact') . '</div></div>';
+    echo '<legend class="u-hidden-visually">Secondary Contact</legend>';
+    echo '<div class="o-step__heading"><div class="o-step__title">' . __('Secondary Contact', 'woocommerce') . '</div></div>';
     echo '<div class="o-step__container">
-            <p class="o-step__description">Description here....</p>
+            <p class="o-step__description">' . __('Alternative Contact at your company', 'woocommerce') . '</p>
             <div class="o-step__content">';
     woocommerce_form_field('contact_fname', [
       'type'  => 'text',
