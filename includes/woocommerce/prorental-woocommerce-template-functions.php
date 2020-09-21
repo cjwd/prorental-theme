@@ -183,6 +183,20 @@ if (!function_exists('custom_billing_checkout_fields')) {
     $fields['billing']['account_username']['priority'] = 6;
     $fields['billing']['account_password']['priority'] = 7;
 
+    // Remove some placeholders
+    $fields['billing']['account_username']['placeholder'] = '';
+    $fields['billing']['account_password']['placeholder'] = '';
+    $fields['billing']['billing_address_1']['placeholder'] = '';
+    $fields['shipping']['shipping_address_1']['placeholder'] = '';
+
+    // Changes fields to show as required
+    $fields['billing']['billing_company']['required'] = true;
+    $fields['shipping']['shipping_company']['required'] = true;
+
+    // Remove Order Notes Field
+    // Causes Warning: Invalid argument supplied for foreach() in /Users/cjwd/Sites/prorental.dev.cc/wp-content/plugins/woocommerce/templates/checkout/form-shipping.php on line 62
+    // unset($fields['order']['order_comments']);
+
 
     $fields['billing']['billing_website'] = [
       'label'   => __('Website', 'woocommerce'),
@@ -217,7 +231,7 @@ if (!function_exists('custom_billing_checkout_fields')) {
     ];
 
     $fields['billing']['billing_id'] = [
-      'label'   => __('Driver\'s Permit, Passport etc', 'woocommerce'),
+      'label'   => __('ID# - Driver\'s Permit, Passport etc', 'woocommerce'),
       'required'  => true,
       'class' =>  array('form-row-wide'),
       'clear' => false,
@@ -275,7 +289,7 @@ if (!function_exists('secondary_contact_checkout_fields')) {
     woocommerce_form_field('contact_idtype', [
       'type' => 'radio',
       'required'  => true,
-      'label' => __('ID type', 'woocommerce'),
+      'label' => __('ID Type', 'woocommerce'),
       'class' => ['radio-group'],
       'options'  => [
         'pp' => __('Passport', 'woocommerce'),
@@ -288,7 +302,7 @@ if (!function_exists('secondary_contact_checkout_fields')) {
     woocommerce_form_field('contact_id', [
       'type' => 'text',
       'required'  => true,
-      'label' => __('ID', 'wooocommerce'),
+      'label' => __('ID# - Driver\'s Permit, Passport etc', 'wooocommerce'),
       'class' => ['form-row-wide']
     ], WC()->checkout->get_value('contact_id'));
     echo '</div><!-- / .o-step__content -->';
