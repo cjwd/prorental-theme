@@ -186,7 +186,6 @@ if (!function_exists('custom_billing_checkout_fields')) {
 
     $fields['billing']['billing_website'] = [
       'label'   => __('Website', 'woocommerce'),
-      'placeholder' => _x('Website', 'placeholder', 'woocommerce'),
       'type'  => 'url',
       'required'  => false,
       'class' =>  array('form-row-wide'),
@@ -196,7 +195,6 @@ if (!function_exists('custom_billing_checkout_fields')) {
 
     $fields['billing']['billing_job'] = [
       'label'   => __('Job Title', 'woocommerce'),
-      'placeholder' => _x('Job Title', 'placeholder', 'woocommerce'),
       'required'  => true,
       'class' =>  array('form-row-wide'),
       'clear' => false,
@@ -205,9 +203,8 @@ if (!function_exists('custom_billing_checkout_fields')) {
 
     $fields['billing']['billing_idtype'] = [
       'label'   => __('ID Type', 'woocommerce'),
-      'placeholder' => _x('ID Type', 'placeholder', 'woocommerce'),
       'required'  => true,
-      'class' =>  array('form-row-wide'),
+      'class' =>  array('form-row-wide radio-group'),
       'clear' => true,
       'type' => 'radio',
       'options' => [
@@ -220,8 +217,7 @@ if (!function_exists('custom_billing_checkout_fields')) {
     ];
 
     $fields['billing']['billing_id'] = [
-      'label'   => __('ID', 'woocommerce'),
-      'placeholder' => _x('Driver\'s Permit, Passport etc', 'placeholder', 'woocommerce'),
+      'label'   => __('Driver\'s Permit, Passport etc', 'woocommerce'),
       'required'  => true,
       'class' =>  array('form-row-wide'),
       'clear' => false,
@@ -280,6 +276,7 @@ if (!function_exists('secondary_contact_checkout_fields')) {
       'type' => 'radio',
       'required'  => true,
       'label' => __('ID type', 'woocommerce'),
+      'class' => ['radio-group'],
       'options'  => [
         'pp' => __('Passport', 'woocommerce'),
         'dp' => __('Driver\'s Permit', 'woocommerce'),
