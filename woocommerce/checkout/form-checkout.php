@@ -30,7 +30,7 @@ if (!$checkout->is_registration_enabled() && $checkout->is_registration_required
 
 ?>
 
-<form name="checkout" method="post" class="checkout woocommerce-checkout" action="<?php echo esc_url(wc_get_checkout_url()); ?>" enctype="multipart/form-data">
+<form id="woocommerce-checkout" name="checkout" method="post" class="checkout woocommerce-checkout" action="<?php echo esc_url(wc_get_checkout_url()); ?>" enctype="multipart/form-data">
   <div class="u-flex">
     <?php if ($checkout->get_checkout_fields()) : ?>
       <div id="customer_details" class="u-w-2/3">
@@ -38,10 +38,10 @@ if (!$checkout->is_registration_enabled() && $checkout->is_registration_required
         <fieldset class="o-step">
           <legend class="u-hidden-visually">Billing Details</legend>
           <div class="o-step__heading">
-            <div class="o-step__title">Billing Details</div>
+            <div class="o-step__title"><?= __('Billing Details', 'woocommerce'); ?></div>
           </div>
           <div class="o-step__container">
-            <p class="o-step__description">Description here....</p>
+            <p class="o-step__description"><?= __('User account and Credit Card Billing Details', 'woocommerce'); ?></p>
             <div class="o-step__content">
               <?php do_action('woocommerce_checkout_billing'); ?>
             </div>
@@ -58,10 +58,10 @@ if (!$checkout->is_registration_enabled() && $checkout->is_registration_required
         <fieldset class="o-step">
           <legend class="u-hidden-visually">Shipping Details</legend>
           <div class="o-step__heading">
-            <div class="o-step__title">Shipping Details</div>
+            <div class="o-step__title"><?= __('Shipping Details', 'woocommerce'); ?></div>
           </div>
           <div class="o-step__container">
-            <p class="o-step__description">Description here....</p>
+            <p class="o-step__description"><?= __('This should ideally be the where the equipment will be used', 'woocommerce'); ?></p>
             <div class="o-step__content">
               <?php do_action('woocommerce_checkout_shipping'); ?>
             </div>
@@ -70,10 +70,10 @@ if (!$checkout->is_registration_enabled() && $checkout->is_registration_required
         <fieldset class="o-step">
           <legend class="u-hidden-visually">Payment</legend>
           <div class="o-step__heading">
-            <div class="o-step__title">Payment</div>
+            <div class="o-step__title"><?= __('Payment', 'woocommerce'); ?></div>
           </div>
           <div class="o-step__container">
-            <p class="o-step__description">Description here....</p>
+            <p class="o-step__description"><?= __('Payment Details', 'woocommerce'); ?></p>
             <div class="o-step__content">
               <?php
               /**
