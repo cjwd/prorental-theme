@@ -1,10 +1,71 @@
-.form-row {
-  .woocommerce-input-wrapper {
-    display: flex;
-    align-items: center;
+/* =========================================
+WooCommerce Checkout Form
+========================================= */
+#woocommerce-checkout {
+  // Horizontal Aligned Radio Buttons
+  .form-row {
+    .woocommerce-input-wrapper {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  // Floating Labels
+  .form-row:not(.radio-group) {
+    position: relative;
+    margin-left: 6px;
+    margin-right: 6px;
+    margin-bottom: 1em;
+
+    label {
+      position: absolute;
+      left: 0;
+      top: 0;
+      margin-left: 17px;
+      font-size: 1em;
+      line-height: 1.375;
+      transform: translateY(0.75em);
+      transform-origin: top left;
+      color: #646970;
+      cursor: text;
+      transition: transform 0.2s ease;
+      z-index: 99;
+    }
+  }
+
+  // When input is clicked
+  .form-row.is-active {
+    input {
+      padding: 1.5em 0 0.25em 16px;
+    }
+
+    label {
+      transform: translateY(4px) scale(0.75);
+    }
+  }
+
+  #billing_country_field,
+  #shipping_country_field {
+    label {
+      position: unset;
+      margin-left: 0;
+      transform: none;
+    }
+  }
+
+  /* Temporary until unsetting of the order comments
+  doesn't product a PHP Warning
+  See prorental-woocommerce-template-functions.php - line 198 */
+  #order_comments_field {
+    display: none;
+  }
+
+  // Override Defailt Select2 Select Input Height
+  .select2-container .select2-selection--single {
+    height: auto;
   }
 }
 
-.select2-container .select2-selection--single {
-  height: auto;
+.woocommerce-billing-fields h3 {
+  display: none;
 }
