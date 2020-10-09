@@ -171,21 +171,9 @@ if (!function_exists('custom_billing_checkout_fields')) {
     $fields['billing']['billing_email']['priority'] = 5;
     $fields['billing']['billing_phone']['priority'] = 25;
 
-    // Move Account fields into billing fields group
-    // 1. Assign fields
-    $fields['billing']['account_username'] = $fields['account']['account_username'];
-    $fields['billing']['account_password'] = $fields['account']['account_password'];
-
-    // 2. Remove previous fields
-    unset($fields['account']['account_username']);
-    unset($fields['account']['account_password']);
-
-    $fields['billing']['account_username']['priority'] = 6;
-    $fields['billing']['account_password']['priority'] = 7;
-
     // Remove some placeholders
-    $fields['billing']['account_username']['placeholder'] = '';
-    $fields['billing']['account_password']['placeholder'] = '';
+    $fields['account']['account_username']['placeholder'] = '';
+    $fields['account']['account_password']['placeholder'] = '';
     $fields['billing']['billing_address_1']['placeholder'] = '';
     $fields['shipping']['shipping_address_1']['placeholder'] = '';
 
