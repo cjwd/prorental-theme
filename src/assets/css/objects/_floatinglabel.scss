@@ -22,9 +22,13 @@
   transition: transform 0.2s ease;
 }
 
-.o-floating-label-text-input.is-active input {
-  padding: 1.5em 0 0.25em 16px;
-}
-.o-floating-label-text-input.is-active label {
-  transform: translateY(4px) scale(0.75);
+.o-floating-label-text-input.is-active,
+.o-floating-label-text-input.is-filled {
+  input {
+    padding: 1.5em 0 0.25em 16px;
+  }
+
+  label {
+    transform: translateY(4px) scale(0.75);
+  }
 }
