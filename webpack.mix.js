@@ -6,7 +6,7 @@ mix.sourceMaps();
 if (mix.inProduction()) {
   mix.version();
 }
-mix.js(`${devPath}/js/scripts.js`, 'js');
+mix.js(`${devPath}/js/main.js`, 'js');
 mix.sass(`${devPath}/css/main.scss`, 'css');
 mix.copyDirectory(`${devPath}/img`, 'dist/assets/img');
 mix.copyDirectory(`${devPath}/fonts`, 'dist/assets/fonts');
