@@ -1,3 +1,40 @@
 .woocommerce-checkout {
   counter-reset: form-step;
+
+  .u-flex {
+    flex-direction: column;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+  }
+}
+
+.woocommerce-checkout-review-order,
+.woocommerce-checkout-customer-details {
+  flex-basis: 50%;
+}
+
+.woocommerce-checkout-review-order {
+  @media (min-width: 992px) {
+    flex-basis: 33.333333%;
+  }
+}
+
+.woocommerce-checkout-customer-details {
+  order: 2;
+  flex-grow: 2;
+
+  @media (min-width: 768px) {
+    order: 0;
+    margin-right: 24px;
+  }
+
+  @media (min-width: 992px) {
+    margin-right: 48px;
+  }
+}
+
+.order-review-heading {
+  margin-bottom: 27px;
 }

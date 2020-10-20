@@ -13,8 +13,6 @@ WooCommerce Checkout Form
   // Floating Labels
   .form-row:not(.radio-group) {
     position: relative;
-    margin-left: 6px;
-    margin-right: 6px;
     margin-bottom: 1em;
 
     label {
@@ -34,8 +32,8 @@ WooCommerce Checkout Form
   }
 
   // When input is clicked
-  .form-row.is-active,
-  .form-row.is-filled {
+  .form-row:not(.radio-group).is-active,
+  .form-row:not(.radio-group).is-filled {
     input {
       padding: 1.5em 0 0.25em 16px;
     }

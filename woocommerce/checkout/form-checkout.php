@@ -33,7 +33,7 @@ if (!$checkout->is_registration_enabled() && $checkout->is_registration_required
 <form id="woocommerce-checkout" name="checkout" method="post" class="checkout woocommerce-checkout" action="<?php echo esc_url(wc_get_checkout_url()); ?>" enctype="multipart/form-data">
   <div class="u-flex">
     <?php if ($checkout->get_checkout_fields()) : ?>
-      <div id="customer_details" class="u-w-2/3">
+      <div id="customer_details" class="woocommerce-checkout-customer-details">
         <?php do_action('woocommerce_checkout_before_customer_details'); ?>
         <fieldset class="o-step">
           <legend class="u-hidden-visually">Billing Details</legend>
@@ -91,8 +91,8 @@ if (!$checkout->is_registration_enabled() && $checkout->is_registration_required
 
     <?php do_action('woocommerce_checkout_before_order_review'); ?>
 
-    <div id="order_review" class="u-w-1/3 woocommerce-checkout-review-order">
-      <h3 id="order_review_heading"><?php esc_html_e('Order Summary', 'woocommerce'); ?></h3>
+    <div id="order_review" class="woocommerce-checkout-review-order">
+      <h3 id="order_review_heading" class="order-review-heading"><?php esc_html_e('Order Summary', 'woocommerce'); ?></h3>
       <?php
       /**
        * @hooked woocommerce_order_review - 10
