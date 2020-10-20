@@ -1,0 +1,58 @@
+button.loading,
+input[type='button'].loading,
+input[type='reset'].loading,
+input[type='submit'].loading,
+.button.loading,
+.wc-block-grid__products .wc-block-grid__product .wp-block-button__link.loading,
+.added_to_cart.loading {
+  position: relative;
+}
+button.loading::after,
+input[type='button'].loading::after,
+input[type='reset'].loading::after,
+input[type='submit'].loading::after,
+.woocommerce a.button.loading::after,
+.wc-block-grid__products .wc-block-grid__product .wp-block-button__link.loading::after,
+.added_to_cart.loading::after {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  line-height: inherit;
+  vertical-align: baseline;
+  content: '\f110';
+  -webkit-animation: fa-spin 0.75s linear infinite;
+  animation: fa-spin 0.75s linear infinite;
+  height: 20px;
+  width: 20px;
+  line-height: 20px;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -10px;
+  margin-top: -10px;
+  display: block;
+  color: var(--colour-primary);
+}
+
+.fa-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
+  animation: fa-spin 2s infinite linear;
+}
+
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
