@@ -31,8 +31,12 @@
             <div class="col-lg-6 col-md-12">
               <div class="header-top-right">
                 <div class="f-right">
-                  <a href="" class="c-btn c-btn--primary">Customer Login</a>
-                  <a href="" class="c-btn c-btn--secondary">Dealer Login</a>
+                  <?php if (is_user_logged_in()) : ?>
+                    <a href="<?= esc_url(wc_logout_url()); ?>" class="c-btn c-btn--primary">Log Out</a>
+                  <?php else : ?>
+                    <a href="/my-account" class="c-btn c-btn--primary">Customer Login</a>
+                    <a href="/supplier-login" class="c-btn c-btn--secondary">Dealer Login</a>
+                  <?php endif; ?>
                 </div>
               </div>
             </div>
