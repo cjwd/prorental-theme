@@ -6,47 +6,7 @@
         <div class="section-title border-line mb-30">
           <h2>Check Availability</h2>
         </div>
-        <form class="search-form mb-60" action="" method="post">
-          <div class="form-controls-wrapper address-wrapper">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="address-fname">
-                  <label for="" class="label">Product Name</label>
-                  <input type="text" class="input" placeholder="Product Name">
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="address-fname">
-                  <label for="" class="label">Model / Manufacturer</label>
-                  <input type="text" class="input" placeholder="Model">
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="address-fname">
-                  <label for="" class="label">Start Date</label>
-                  <input type="date" class="input" placeholder="Start Date">
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="address-fname">
-                  <label for="" class="label">End Date</label>
-                  <input type="date" class="input" placeholder="End Date">
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="address-fname">
-                  <label for="" class="label">Location</label>
-                  <input type="text" class="input" placeholder="Location">
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-12 footer-content mail-content">
-            <div class="send">
-              <input class="c-btn c-btn--primary" type="submit" value="Search" class="submit">
-            </div>
-          </div>
-        </form>
+        <?php get_search_form(); ?>
         <!-- Search Form -->
       </div>
       <div class="col-md-4">
