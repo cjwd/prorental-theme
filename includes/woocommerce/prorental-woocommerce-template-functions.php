@@ -233,6 +233,7 @@ if (!function_exists('custom_billing_checkout_fields')) {
 if (!function_exists('secondary_contact_checkout_fields')) {
   function secondary_contact_checkout_fields()
   {
+    $user = get_current_user_id();
     echo '<fieldset class="o-step">';
     echo '<legend class="u-hidden-visually">Secondary Contact</legend>';
     echo '<div class="o-step__heading"><div class="o-step__title">' . __('Secondary Contact', 'woocommerce') . '</div></div>';
@@ -244,6 +245,7 @@ if (!function_exists('secondary_contact_checkout_fields')) {
       'required'  => true,
       'class' =>  ['form-row-first'],
       'label' =>  __('First Name', 'woocommerce'),
+      'default' => is_null(WC()->checkout->get_value('contact_fname')) ? get_post_meta(131, 'Contact First Name', true) : 'Jane'
     ], WC()->checkout->get_value('contact_fname'));
 
     woocommerce_form_field('contact_lname', [
@@ -296,5 +298,71 @@ if (!function_exists('secondary_contact_checkout_fields')) {
     echo '</div><!-- / .o-step__content -->';
     echo '</div>';
     echo '</fieldset>';
+  }
+}
+
+if (!function_exists('prorental_process_customer_checkout_fields')) {
+  function prorental_process_customer_checkout_fields()
+  {
+    if (!$_POST['contact_fname']) {
+      wc_add_notice(__('Secondary Contact First Name is required'), 'error');
+    }
+
+    if (!$_POST['contact_lname']) {
+      wc_add_notice(__('Secondary Contact Last Name is required'), 'error');
+    }
+
+    if (!$_POST['contact_email']) {
+      wc_add_notice(__('Secondary Contact Email is required'), 'error');
+    }
+
+    if (!$_POST['contact_phone']) {
+      wc_add_notice(__('Secondary Contact Phone Number is required'), 'error');
+    }
+
+    if (!$_POST['contact_job']) {
+      wc_add_notice(__('Secondary Contact Job Title is required'), 'error');
+    }
+
+    if (!$_POST['contact_idtype']) {
+      wc_add_notice(__('Secondary Contact ID Type is required'), 'error');
+    }
+
+    if (!$_POST['contact_id']) {
+      wc_add_notice(__('Secondary Contact ID Number is required'), 'error');
+    }
+  }
+}
+
+if (!function_exists('prorental_custom_checkout_fields_update_order_meta')) {
+  function prorental_custom_checkout_fields_update_order_meta($order_id)
+  {
+    if (!empty($_POST['contact_fname'])) {
+      update_post_meta($order_id, 'Contact First Name', sanitize_text_field($_POST['contact_fname']));
+    }
+
+    if (!empty($_POST['contact_lname'])) {
+      update_post_meta($order_id, 'Contact Last Name', sanitize_text_field($_POST['contact_lname']));
+    }
+
+    if (!empty($_POST['contact_email'])) {
+      update_post_meta($order_id, 'Contact Email', sanitize_text_field($_POST['contact_email']));
+    }
+
+    if (!empty($_POST['contact_phone'])) {
+      update_post_meta($order_id, 'Contact Phone', sanitize_text_field($_POST['contact_phone']));
+    }
+
+    if (!empty($_POST['contact_job'])) {
+      update_post_meta($order_id, 'Contact Job', sanitize_text_field($_POST['contact_job']));
+    }
+
+    if (!empty($_POST['contact_idtype'])) {
+      update_post_meta($order_id, 'Contact ID Type', sanitize_text_field($_POST['contact_idtype']));
+    }
+
+    if (!empty($_POST['contact_id'])) {
+      update_post_meta($order_id, 'Contact ID', sanitize_text_field($_POST['contact_id']));
+    }
   }
 }
