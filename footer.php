@@ -116,6 +116,7 @@
   </div>
   <!-- Wrapper End -->
   <?php wp_footer(); ?>
+  <?php do_action('do_geolocation_user_location_form'); ?>
   </body>
 
   </html>
