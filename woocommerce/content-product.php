@@ -63,6 +63,7 @@ global $product;
    * @hooked woocommerce_template_loop_price - 10
    * @hooked woocommerce_template_single_excerpt - 10
    * @hooked prorental_product_actions_wrapper_open - 10
+   * @hooked prorental_add_geolocation_distance - 10
    */
   do_action('woocommerce_after_shop_loop_item_title');
 

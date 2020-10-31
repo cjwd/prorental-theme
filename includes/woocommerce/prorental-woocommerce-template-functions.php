@@ -366,3 +366,13 @@ if (!function_exists('prorental_custom_checkout_fields_update_order_meta')) {
     }
   }
 }
+
+
+if (!function_exists('prorental_add_geolocation_distance')) {
+  function prorental_add_geolocation_distance()
+  {
+    $product_geolocation = equiserv_product_geolocation();
+    $distance  = round(equiserv_convert_distance_km($product_geolocation->distance));
+    get_template_part('template-parts/distance', null, ['distance' => $distance]);
+  }
+}

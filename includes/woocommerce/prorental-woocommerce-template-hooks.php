@@ -75,3 +75,7 @@ add_action('woocommerce_checkout_process', 'prorental_process_customer_checkout_
 // Save the custom checkout fields
 // Sanitization
 add_action('woocommerce_checkout_update_order_meta', 'prorental_custom_checkout_fields_update_order_meta');
+
+// Add Geolocation details to single and archive product summary
+add_action('woocommerce_single_product_summary', 'prorental_add_geolocation_distance');
+add_action('woocommerce_after_shop_loop_item_title', 'prorental_add_geolocation_distance', 10);
