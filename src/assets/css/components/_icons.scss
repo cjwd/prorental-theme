@@ -1,3 +1,27 @@
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.icon-wrap {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  margin: 0;
+  padding: 6px;
+  transition: $global-transition;
+  border-radius: $global-radius;
+  line-height: 0;
+}
+
+.icon-wrap--primary {
+  background-color: #cccccc;
+}
+
 button.loading,
 input[type='button'].loading,
 input[type='reset'].loading,
