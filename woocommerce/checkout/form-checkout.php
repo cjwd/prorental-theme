@@ -48,13 +48,6 @@ if (!$checkout->is_registration_enabled() && $checkout->is_registration_required
           </div>
         </fieldset>
 
-        <?php
-        /**
-         * @hooked secondary_contact_checkout_fields - 10
-         */
-        do_action('prorental_after_checkout_billing_form');
-        ?>
-
         <fieldset class="o-step">
           <legend class="u-hidden-visually">Shipping Details</legend>
           <div class="o-step__heading">
