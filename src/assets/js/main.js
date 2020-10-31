@@ -1,8 +1,8 @@
 /* Floating Labels */
-const formCheckoutEl = document.getElementById('woocommerce-checkout'),
-  checkoutInputs = formCheckoutEl.querySelectorAll('input');
+const formCheckoutEl = document.getElementById('woocommerce-checkout');
 
-if (formCheckoutEl.length > 0) {
+if (formCheckoutEl) {
+  let checkoutInputs = formCheckoutEl.querySelectorAll('input');
   checkoutInputs.forEach((e) => {
     if (e.value.length > 0) {
       e.parentElement.parentElement.classList.add('is-filled');
