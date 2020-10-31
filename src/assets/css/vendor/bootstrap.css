@@ -631,7 +631,7 @@ pre code {
   width: auto;
   max-width: none;
 }
-.col-1 {
+/* .col-1 {
   -ms-flex: 0 0 8.333333%;
   flex: 0 0 8.333333%;
   max-width: 8.333333%;
@@ -694,7 +694,7 @@ pre code {
 .order-first {
   -ms-flex-order: -1;
   order: -1;
-}
+} */
 .order-last {
   -ms-flex-order: 13;
   order: 13;
