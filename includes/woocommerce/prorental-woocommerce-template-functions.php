@@ -141,13 +141,6 @@ if (!function_exists('prorental_custom_breadrumb_home_url')) {
   }
 }
 
-if (!function_exists('prorental_dashboard_upper_info')) {
-  function prorental_dashboard_upper_info()
-  {
-    get_template_part('template-parts/account', 'upperinfo');
-  }
-}
-
 if (!function_exists('prorental_page_title_display')) {
   function prorental_page_title_display()
   {

@@ -39,8 +39,6 @@ add_action('woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop
 add_action('woocommerce_after_shop_loop_item_title', 'woocommerce_template_single_excerpt', 10);
 add_action('woocommerce_after_shop_loop_item_title', 'prorental_product_actions_wrapper_open', 10);
 
-add_action('woocommerce_before_account_navigation', 'prorental_dashboard_upper_info');
-
 add_action('woocommerce_account_content', 'prorental_page_title_display', 5);
 
 /**
