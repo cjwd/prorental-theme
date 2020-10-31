@@ -164,6 +164,14 @@ if (!function_exists('prorental_product_search')) {
   }
 }
 
+if (!function_exists('prorental_remove_address_fields_placeholders')) {
+  function prorental_remove_address_fields_placeholders($fields)
+  {
+    $fields['address_1']['placeholder'] = '';
+    return $fields;
+  }
+}
+
 if (!function_exists('custom_billing_checkout_fields')) {
   function custom_billing_checkout_fields($fields)
   {
@@ -174,8 +182,6 @@ if (!function_exists('custom_billing_checkout_fields')) {
     // Remove some placeholders
     $fields['account']['account_username']['placeholder'] = '';
     $fields['account']['account_password']['placeholder'] = '';
-    $fields['billing']['billing_address_1']['placeholder'] = '';
-    $fields['shipping']['shipping_address_1']['placeholder'] = '';
 
     // Changes fields to show as required
     $fields['billing']['billing_company']['required'] = true;

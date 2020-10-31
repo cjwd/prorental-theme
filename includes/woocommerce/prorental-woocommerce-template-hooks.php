@@ -63,6 +63,7 @@ add_filter('woocommerce_breadcrumb_home_url', 'prorental_custom_breadrumb_home_u
  */
 // Adding Custom Shipping and Billing Fields
 add_filter('woocommerce_checkout_fields', 'custom_billing_checkout_fields');
+add_filter('woocommerce_default_address_fields', 'prorental_remove_address_fields_placeholders');
 add_action('prorental_after_checkout_billing_form', 'secondary_contact_checkout_fields');
 
 /**
