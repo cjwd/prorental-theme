@@ -74,3 +74,12 @@ add_action('woocommerce_checkout_update_order_meta', 'prorental_custom_checkout_
 // Add Geolocation details to single and archive product summary
 add_action('woocommerce_single_product_summary', 'prorental_add_geolocation_distance');
 add_action('woocommerce_after_shop_loop_item_title', 'prorental_add_geolocation_distance', 10);
+
+
+/**
+ * Adds a new column to the "My Orders" table in the account.
+ * Get the data and display it for the new columns
+ */
+add_filter('woocommerce_my_account_my_orders_columns', 'prorental_add_my_account_orders_column');
+add_action('woocommerce_my_account_my_orders_column_order-delivery-date', 'prorental_order_delivery_date_column');
+add_action('woocommerce_my_account_my_orders_column_order-return-date', 'prorental_order_return_date_column');

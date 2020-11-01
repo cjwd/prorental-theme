@@ -237,3 +237,55 @@ if (!function_exists('prorental_add_geolocation_distance')) {
     get_template_part('template-parts/distance', null, ['distance' => $distance]);
   }
 }
+
+
+/**
+ * Adds a new column to the "My Orders" table in the account.
+ *
+ * @param string[] $columns the columns in the orders table
+ * @return string[] updated columns
+ */
+function prorental_add_my_account_orders_column($columns)
+{
+
+  $new_columns = array();
+
+  foreach ($columns as $key => $name) {
+
+    $new_columns[$key] = $name;
+
+    // add ship-to after order status column
+    if ('order-date' === $key) {
+      $new_columns['order-delivery-date'] = __('Delivery Date', 'prorental');
+      $new_columns['order-return-date'] = __('Return Date', 'prorental');
+    }
+  }
+
+  return $new_columns;
+}
+
+/**
+ * Adds data to the custom "order-delivery-date" column in "My Account > Orders".
+ *
+ * @param \WC_Order $order the order object for the row
+ */
+function prorental_order_delivery_date_column($order)
+{
+  foreach ($order->get_items() as $item_id => $item) {
+    $delivery_date = wc_get_order_item_meta($item_id, 'Pickup Date', $single = true);
+    echo !empty($delivery_date) ? $delivery_date : '&ndash;';
+  }
+}
+
+/**
+ * Adds data to the custom "order-return-date column in "My Account > Orders".
+ *
+ * @param \WC_Order $order the order object for the row
+ */
+function prorental_order_return_date_column($order)
+{
+  foreach ($order->get_items() as $item_id => $item) {
+    $delivery_date = wc_get_order_item_meta($item_id, 'Drop-off Date', $single = true);
+    echo !empty($delivery_date) ? $delivery_date : '&ndash;';
+  }
+}
