@@ -25,3 +25,7 @@ if (formCheckoutEl) {
     });
   });
 }
+/* Mobile Menu Activation */
+jQuery('.mobile-menu nav').meanmenu({
+  meanScreenWidth: "991",
+});
