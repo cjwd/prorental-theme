@@ -15,3 +15,41 @@
     display: none;
   }
 }
+
+/*=============================================
+=            #SEARCH FORM HORIZONTAL         =
+=============================================*/
+
+.search-form-horizontal {
+  .search-form {
+    display: flex;
+    flex-flow: row wrap;
+    @media (min-width: 1200px) {
+      flex-wrap: nowrap;
+      align-items: center;
+    }
+  }
+
+  .form-controls-wrapper {
+    @media (min-width: 1200px) {
+      margin-right: 2em;
+    }
+  }
+
+  .form-controls-wrapper .row {
+    @media (min-width: 768px) {
+      align-items: flex-end;
+    }
+
+    @media (min-width: 992px) {
+      flex-wrap: nowrap;
+    }
+
+    .col-md-6 {
+      flex: 1 0 100%;
+      @media (min-width: 992px) {
+        flex: 1;
+      }
+    }
+  }
+}

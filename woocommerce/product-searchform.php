@@ -21,33 +21,10 @@ if (!defined('ABSPATH')) {
 }
 
 ?>
-<div class="container">
+<div class="container search-form-horizontal">
   <div class="row">
     <div class="col-lg-12">
-      <form role="search" method="get" class="prorental-product-search" action="<?php echo esc_url(home_url('/')); ?>">
-        <ul class="search-form-fields">
-          <li class="search-form-control">
-            <label class="label">Product Name</label>
-            <input type="text" placeholder="Product Name">
-          </li>
-          <li class="search-form-control">
-            <label class="label">Model</label>
-            <input type="text" placeholder="Model">
-          </li>
-          <li class="search-form-control">
-            <label class="label">Available From</label>
-            <input class="input-text" type="date" placeholder="Available From">
-          </li>
-          <li class="search-form-control">
-            <label class="label">Location</label>
-            <input type="text" placeholder="Location">
-          </li>
-          <li class="search-form-control">
-            <button class="c-btn c-btn--primary" type="submit" value="<?php echo esc_attr_x('Search', 'submit button', 'woocommerce'); ?>"><?php echo esc_html_x('Search', 'submit button', 'woocommerce'); ?></button>
-            <input type="hidden" name="post_type" value="product" />
-          </li>
-        </ul>
-      </form>
+      <?php get_search_form(); ?>
     </div>
   </div>
 </div>
