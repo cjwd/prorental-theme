@@ -61,19 +61,11 @@
   .header-top {
     height: auto;
   }
-  .header-top-left {
-    text-align: center;
-    width: 100%;
-    padding: 20px 0;
-  }
+
   .header-list-menu.f-right {
     float: none;
     text-align: center;
     display: inline-block;
-  }
-  .header-top-right {
-    text-align: center;
-    padding: 10px 0;
   }
 }
 
@@ -318,20 +310,13 @@
   .cart-box.text-right {
     padding-top: 2px;
   }
-  .header-top-left {
-    text-align: center;
-    width: 100%;
-    padding: 15px 0;
-  }
+
   .header-list-menu.f-right {
     float: none;
     text-align: center;
     display: inline-block;
   }
-  .header-top-right {
-    text-align: center;
-    padding: 10px 0;
-  }
+
   .cart-box {
     padding-right: 33px;
   }
