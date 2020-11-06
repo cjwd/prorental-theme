@@ -1,4 +1,4 @@
-@import 'vendor/meanmenu.min';
+// @import 'vendor/meanmenu.min';
 // @import 'vendor/animate';
 // @import 'vendor/nivo-slider';
 // @import 'vendor/owl.carousel.min';
@@ -69,6 +69,7 @@
 // @import "objects/tables";
 @import 'objects/floatinglabel';
 @import 'objects/stepform';
+@import 'objects/forms';
 
 /*=====  End of Objects  ======*/
 
@@ -76,12 +77,14 @@
 =            Components            =
 =============================================*/
 
+@import 'components/site-header.scss';
 @import 'components/buttons';
 @import 'components/searchform';
 @import 'components/checkoutform';
 @import 'components/icons';
 // @import "components/site-nav.scss";
 @import 'components/kageolocform';
+@import 'components/forms';
 
 /*=============================================
 =            WooCommerce Overrides            =
