@@ -26,6 +26,14 @@ if (formCheckoutEl) {
   });
 }
 /* Mobile Menu Activation */
-jQuery('.mobile-menu nav').meanmenu({
-  meanScreenWidth: "991",
-});
+const navToggle = () => {
+  const menuToggleEl = document.querySelector('.primary-menu-toggle');
+  const primaryNavEl = document.querySelector('.primary-menu');
+
+  menuToggleEl.addEventListener('click', () => {
+    primaryNavEl.classList.toggle('active');
+    menuToggleEl.classList.toggle('active');
+  })
+}
+
+navToggle();
