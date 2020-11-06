@@ -1,0 +1,11 @@
+.eslr-supplier-login-form {
+  max-width: 375px;
+  margin: 0 auto;
+  fieldset p {
+    margin-bottom: 1.5em;
+  }
+
+  input[type='submit'] {
+    @extend .c-btn--primary;
+  }
+}
