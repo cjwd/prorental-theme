@@ -13,6 +13,21 @@
 .add_to_cart_button {
   background-color: var(--colour-primary) !important;
   color: var(--colour-white) !important;
+
+  &.loading {
+    color: var(--colour-primary) !important;
+  }
+}
+
+.actions-secondary {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+
+  > * {
+    margin-right: 1em;
+    margin-bottom: 1em !important;
+  }
 }
 
 #add_payment_method .wc-proceed-to-checkout a.checkout-button,
@@ -109,4 +124,66 @@
 .woocommerce-page #content table.cart td.actions .coupon,
 .woocommerce-page table.cart td.actions .coupon {
   display: flex;
+}
+
+/*=============================================
+=            Shop / Product Archive           =
+=============================================*/
+.woocommerce-loop-product__title {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.pro-content .star-rating {
+  margin-bottom: 10px;
+}
+
+.pro-content .woocommerce-product-details__short-description {
+  margin-top: 24px;
+}
+
+.grid-list-top {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.woocommerce .woocommerce-result-count,
+.woocommerce .woocommerce-ordering {
+  margin: 0;
+}
+
+/*=============================================
+=            Single Product           =
+=============================================*/
+
+.product_title {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.product_title + .woocommerce-product-rating {
+  margin-bottom: 10px !important;
+}
+
+.product_title + .woocommerce-product-rating .star-rating {
+  float: left !important;
+}
+
+.woocommerce div.product p.price,
+.woocommerce div.product span.price {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.amount {
+  color: inherit;
+}
+
+.summary .equiserv-distance {
+  margin-bottom: 10px;
 }
