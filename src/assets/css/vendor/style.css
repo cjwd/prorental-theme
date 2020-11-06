@@ -479,20 +479,6 @@ ul.ht-dropdown.dropdown-style-two li {
   margin-top: 14px;
 }
 
-.logo {
-  height: 100%;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  -ms-align-items: center;
-  align-items: center;
-}
-.logo img {
-  max-width: 100%;
-}
-
 .middle-menu-list > li > a {
   background: transparent none repeat scroll 0 0;
   color: #333;
