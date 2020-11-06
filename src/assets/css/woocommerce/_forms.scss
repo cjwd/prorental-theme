@@ -44,7 +44,10 @@ WooCommerce Checkout Form
   }
 
   #billing_country_field,
-  #shipping_country_field {
+  #shipping_country_field,
+  #billing_state_field,
+  p[id='3_field'].address-field,
+  p[id='7_field'].address-field {
     label {
       position: unset;
       margin-left: 0;
