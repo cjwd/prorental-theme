@@ -9,7 +9,7 @@ if (!function_exists('output_content_wrapper')) {
   {
     do_action('prorental_before_main_content');
     echo '<main class="main-shop-page pb-60"><div class="container"><div class="row">';
-    if (is_shop()) {
+    if (is_shop() || is_product_category() || is_product_tag()) {
       do_action('prorental_sidebar');
     }
   }
