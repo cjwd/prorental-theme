@@ -13,9 +13,9 @@
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/dist/.gitignore",
-		"oF": 0
+		"oF": 1
 		},
 	"/dist": {
 		"ft": 65536,
@@ -59,9 +59,9 @@
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "/dist/header.php",
-		"oF": 1
+		"oF": 0
 		},
 	"/includes": {
 		"ft": 65536,
@@ -105,14 +105,6 @@
 		"oO": 0,
 		"oS": 1
 		},
-	"/page-customer-login.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/dist/page-customer-login.php",
-		"oF": 0
-		},
 	"/README.md": {
 		"cB": 0,
 		"cS": 0,
@@ -122,9 +114,9 @@
 		"eSQ": 1,
 		"ft": 4096,
 		"hM": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/dist/README.html",
-		"oF": 0,
+		"oF": 1,
 		"oFM": 0,
 		"oS": 0,
 		"pHT": 0,
@@ -226,6 +218,45 @@
 		"oS": 3,
 		"sct": 0
 		},
+	"/src/assets/css/components/_forms.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dist/assets/css/components/_forms.css",
+		"oF": 0,
+		"oS": 3,
+		"sct": 0
+		},
+	"/src/assets/css/components/_icons.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dist/assets/css/components/_icons.css",
+		"oF": 0,
+		"oS": 3,
+		"sct": 0
+		},
+	"/src/assets/css/components/_kageolocform.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dist/assets/css/components/_kageolocform.css",
+		"oF": 0,
+		"oS": 3,
+		"sct": 0
+		},
 	"/src/assets/css/components/_searchform.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -248,6 +279,32 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/dist/assets/css/components/_site-nav.css",
+		"oF": 0,
+		"oS": 3,
+		"sct": 0
+		},
+	"/src/assets/css/components/site-footer.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dist/assets/css/components/site-footer.css",
+		"oF": 0,
+		"oS": 3,
+		"sct": 0
+		},
+	"/src/assets/css/components/site-header.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dist/assets/css/components/site-header.css",
 		"oF": 0,
 		"oS": 3,
 		"sct": 0
@@ -391,6 +448,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/dist/assets/css/objects/_floatinglabel.css",
+		"oF": 0,
+		"oS": 3,
+		"sct": 0
+		},
+	"/src/assets/css/objects/_forms.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dist/assets/css/objects/_forms.css",
 		"oF": 0,
 		"oS": 3,
 		"sct": 0
@@ -1243,6 +1313,16 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/src/assets/img/icons.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/dist/assets/img/icons.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/src/assets/img/logo/logo.png": {
 		"ft": 32768,
 		"iS": 2387,
@@ -1452,6 +1532,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/src/assets/js/jquery.meanmenu.min.js": {
+		"bF": 4,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/dist/assets/js/jquery.meanmenu.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
 	"/src/assets/js/main.js": {
 		"bF": 4,
 		"ft": 64,
@@ -1490,9 +1581,9 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/dist/webpack.mix.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 3,
 		"tS": 1
 		},
@@ -1521,7 +1612,7 @@
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets-rose",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 619475112.27765095
+	"lastBuiltDate": 624225637.82593203
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
