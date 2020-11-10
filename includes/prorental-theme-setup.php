@@ -171,12 +171,12 @@ add_action('widgets_init', function () {
 
   $label_args = [
     [
-      'name' => __('Primary', 'slate'),
+      'name' => __('Primary', 'prorental'),
       'id' => 'sidebar-primary',
     ],
 
     [
-      'name' => __('Footer', 'slate'),
+      'name' => __('Footer', 'prorental'),
       'id' => 'sidebar-footer',
     ]
   ];
