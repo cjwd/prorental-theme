@@ -23,6 +23,32 @@ if (!function_exists('prorental_get_sidebar')) {
 }
 
 /**
+ * Dynamically create grids based on active widgets
+ * get_option('sidebars_widgets')
+ *
+ */
+function widgetize_footer($sidebar_name)
+{
+  $num_active_widgets = get_option('sidebars_widgets');
+
+  if (is_active_sidebar($sidebar_name)) {
+    $num_active_widgets = count($num_active_widgets[$sidebar_name]);
+  }
+
+  if ($num_active_widgets == 0) {
+    return;
+  }
+
+  if ($num_active_widgets >= 1) : ?>
+          <?php if (is_active_sidebar($sidebar_name)) : dynamic_sidebar($sidebar_name);
+          endif; ?>
+  <?php endif; ?>
+<?php
+
+}
+
+
+/**
  * Custom Posts Pagination
  *
  * @param string $num_pages
