@@ -122,3 +122,27 @@ function widget_class_filter($params)
 
   return $params;
 }
+
+/**
+ * Filters the nav menu args when used for a widget.
+ *
+ * @since  0.0.1
+ * @access public
+ * @param  array    $args
+ * @param  \WP_Term $menu
+ * @return array
+ */
+function widget_nav_menu_args($args, $menu)
+{
+
+  $args['container_class'] = sprintf(
+    'c-menu c-menu--widget c-menu--%s',
+    sanitize_html_class($menu->slug)
+  );
+
+  $args['container_id'] = '';
+  $args['menu_id']      = '';
+  $args['menu_class']   = 'c-menu__items';
+
+  return $args;
+}
