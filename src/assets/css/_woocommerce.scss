@@ -30,6 +30,15 @@
 	}
 }
 
+.new-pro-content .rental-single-product .actions-secondary {
+	justify-content: center;
+}
+
+.add-cart {
+	@extend .c-btn;
+	@extend .c-btn--primary;
+}
+
 #add_payment_method .wc-proceed-to-checkout a.checkout-button,
 .woocommerce-cart .wc-proceed-to-checkout a.checkout-button,
 .woocommerce-checkout .wc-proceed-to-checkout a.checkout-button {
