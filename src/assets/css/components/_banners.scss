@@ -1,0 +1,45 @@
+.banner {
+	max-height: 205px;
+	overflow: hidden;
+	background: url('https://via.placeholder.com/600x350') center center
+		no-repeat;
+	background-size: cover;
+	color: white;
+
+	p {
+		margin-bottom: 12px;
+		font-size: 10px;
+		line-height: 1.2;
+	}
+}
+
+.banner + .banner {
+	margin-top: 30px;
+}
+
+.banner__title {
+	margin-bottom: 12px;
+	font-size: 24px;
+	line-height: 1.2;
+	color: #fff;
+}
+
+.banner--style1 {
+	display: flex;
+	justify-content: space-between;
+	padding: 30px;
+
+	.banner__left,
+	.banner__right {
+		flex-basis: 50%;
+	}
+}
+
+.banner--style2 {
+	.banner__right {
+		width: 50%;
+		margin-left: auto;
+		padding: 1em;
+		background: #000;
+	}
+}
