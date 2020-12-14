@@ -7,37 +7,37 @@
 .woocommerce input.button,
 .woocommerce button.button:disabled:hover,
 .woocommerce button.button:disabled[disabled]:hover {
-  @extend .c-btn;
+	@extend .c-btn;
 }
 
 .add_to_cart_button {
-  background-color: var(--colour-primary) !important;
-  color: var(--colour-white) !important;
+	background-color: var(--colour-primary) !important;
+	color: var(--colour-white) !important;
 
-  &.loading {
-    color: var(--colour-primary) !important;
-  }
+	&.loading {
+		color: var(--colour-primary) !important;
+	}
 }
 
 .actions-secondary {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
 
-  > * {
-    margin-right: 1em;
-    margin-bottom: 1em !important;
-  }
+	> * {
+		margin-right: 1em;
+		margin-bottom: 1em !important;
+	}
 }
 
 #add_payment_method .wc-proceed-to-checkout a.checkout-button,
 .woocommerce-cart .wc-proceed-to-checkout a.checkout-button,
 .woocommerce-checkout .wc-proceed-to-checkout a.checkout-button {
-  @extend .c-btn;
+	@extend .c-btn;
 }
 
 .checkout-button {
-  background-color: var(--colour-primary) !important;
+	background-color: var(--colour-primary) !important;
 }
 
 /*=============================================
@@ -47,73 +47,73 @@
 .woocommerce table.cart td.actions .input-text,
 .woocommerce-page #content table.cart td.actions .input-text,
 .woocommerce-page table.cart td.actions .input-text {
-  width: 100%;
+	width: 100%;
 }
 
 .woocommerce-cart table.cart td.actions .coupon .input-text {
-  padding: calc(var(--unit) / 2) var(--unit);
-  flex-basis: 50%;
+	padding: calc(var(--unit) / 2) var(--unit);
+	flex-basis: 50%;
 }
 
 .woocommerce .quantity .qty {
-  width: auto;
+	width: auto;
 }
 
 /*=============================================
 =            Star Rating            =
 =============================================*/
 .woocommerce .star-rating {
-  float: none !important;
+	float: none !important;
 }
 
 .woocommerce.center .star-rating {
-  margin-left: auto;
-  margin-right: auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .woocommerce .star-rating span::before {
-  color: var(--colour-primary);
+	color: var(--colour-primary);
 }
 
 /*=============================================
 =            Breadcrumb           =
 =============================================*/
 .breadcrumb-area .woocommerce-breadcrumb {
-  margin-bottom: 0;
-  padding: 25px 15px;
-  border-radius: 0.25rem;
-  background-color: #f5f5f5;
-  color: var(--colour-primary, #000);
+	margin-bottom: 0;
+	padding: 25px 15px;
+	border-radius: 0.25rem;
+	background-color: #f5f5f5;
+	color: var(--colour-primary, #000);
 
-  a {
-    color: #555;
-  }
+	a {
+		color: #555;
+	}
 }
 
 .woocommerce-breadcrumb a:hover {
-  color: var(--colour-primary, #000);
+	color: var(--colour-primary, #000);
 }
 
 .woocommerce-breadcrumb-delimiter {
-  padding-left: 5px;
-  padding-right: 5px;
-  color: #ccc;
+	padding-left: 5px;
+	padding-right: 5px;
+	color: #ccc;
 }
 
 /*=============================================
 =            My Account           =
 =============================================*/
 .woocommerce-MyAccount-content {
-  border: 1px solid #ebebeb;
-  padding: 30px;
+	border: 1px solid #ebebeb;
+	padding: 30px;
 
-  h3 {
-    border-bottom: 1px solid #ebebeb;
-    font-size: 28px;
-    line-height: 28px;
-    margin-bottom: 20px;
-    padding-bottom: 15px;
-  }
+	h3 {
+		border-bottom: 1px solid #ebebeb;
+		font-size: 28px;
+		line-height: 28px;
+		margin-bottom: 20px;
+		padding-bottom: 15px;
+	}
 }
 
 /*=============================================
@@ -123,35 +123,35 @@
 .woocommerce table.cart td.actions .coupon,
 .woocommerce-page #content table.cart td.actions .coupon,
 .woocommerce-page table.cart td.actions .coupon {
-  display: flex;
+	display: flex;
 }
 
 /*=============================================
 =            Shop / Product Archive           =
 =============================================*/
 .woocommerce-loop-product__title {
-  margin-bottom: 10px;
-  font-size: 16px;
+	margin-bottom: 10px;
+	font-size: 16px;
 }
 
 .pro-content .star-rating {
-  margin-bottom: 10px;
+	margin-bottom: 10px;
 }
 
 .pro-content .woocommerce-product-details__short-description {
-  margin-top: 24px;
+	margin-top: 24px;
 }
 
 .grid-list-top {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: center;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .woocommerce .woocommerce-result-count,
 .woocommerce .woocommerce-ordering {
-  margin: 0;
+	margin: 0;
 }
 
 /*=============================================
@@ -159,31 +159,66 @@
 =============================================*/
 
 .product_title {
-  margin-bottom: 10px;
-  font-size: 18px;
-  font-weight: 500;
-  text-transform: capitalize;
+	margin-bottom: 10px;
+	font-size: 18px;
+	font-weight: 500;
+	text-transform: capitalize;
 }
 
 .product_title + .woocommerce-product-rating {
-  margin-bottom: 10px !important;
+	margin-bottom: 10px !important;
 }
 
 .product_title + .woocommerce-product-rating .star-rating {
-  float: left !important;
+	float: left !important;
 }
 
 .woocommerce div.product p.price,
 .woocommerce div.product span.price {
-  font-size: 14px;
-  color: #333;
-  margin-bottom: 10px;
+	font-size: 14px;
+	color: #333;
+	margin-bottom: 10px;
 }
 
 .amount {
-  color: inherit;
+	color: inherit;
 }
 
 .summary .equiserv-distance {
-  margin-bottom: 10px;
+	margin-bottom: 10px;
+}
+
+/*=============================================
+=            Orders - My Account           =
+=============================================*/
+
+.date--due {
+	color: var(--colour-warning);
+
+	&:after {
+		content: 'due soon';
+		display: block;
+		border-radius: 50px;
+		font-size: 10px;
+		text-transform: uppercase;
+		font-weight: 700;
+		text-align: center;
+		background-color: var(--colour-warning);
+		color: #fff;
+	}
+}
+
+.date--expired {
+	color: var(--colour-error);
+	&:after {
+		content: 'expired';
+		display: block;
+		border-radius: 50px;
+		font-size: 10px;
+		text-transform: uppercase;
+		font-weight: 700;
+		text-align: center;
+		background-color: var(--colour-error);
+		color: #fff;
+	}
 }
