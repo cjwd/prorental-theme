@@ -14,12 +14,15 @@
  */
 
 @function block_colours() {
-  @return (
-    'primary': '#0097e6',
-    'secondary': '#192a56',
-    'white': '#f5f6fa',
-    'black': '#000',
-    'link': '#555',
-    'text': '#333'
-  );
+	@return (
+		'primary': '#FFC312',
+		'secondary': '#000000',
+		'white': '#f5f6fa',
+		'black': '#000',
+		'link': '#555',
+		'text': '#333',
+		'error': '#e84118',
+		'success': '#4cd137',
+		'warning': '#fbc531'
+	);
 }
