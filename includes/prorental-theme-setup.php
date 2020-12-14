@@ -178,6 +178,10 @@ add_action('widgets_init', function () {
     [
       'name' => __('Footer', 'prorental'),
       'id' => 'sidebar-footer',
+    ],
+    [
+      'name' => __('Home Top Widgets', 'prorental'),
+      'id'  =>  'home-top'
     ]
   ];
 
