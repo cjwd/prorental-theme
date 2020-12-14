@@ -9,9 +9,12 @@
         <?php get_search_form(); ?>
         <!-- Search Form -->
       </div>
-      <div class="col-md-4">
-        <div class="single-banner zoom mb-20"><a href=""><img src="<?= get_stylesheet_directory_uri(); ?>/dist/assets/img/banner/9.jpg" alt=""></a></div>
-        <div class="single-banner zoom mb-20"><a href=""><img src="<?= get_stylesheet_directory_uri(); ?>/dist/assets/img/banner/10.jpg" alt=""></a></div>
+      <div class="col-md-4 home-top-widgets">
+        <?php
+        if (is_active_sidebar('home-top')) {
+          dynamic_sidebar( 'home-top' );
+        }
+        ?>
       </div>
     </div>
   </div>
