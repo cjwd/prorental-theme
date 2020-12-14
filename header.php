@@ -29,8 +29,8 @@
             <?php if (is_user_logged_in()) : ?>
               <a href="<?= esc_url(wc_logout_url()); ?>" class="c-btn c-btn--primary">Log Out</a>
             <?php else : ?>
-              <a href="/my-account" class="c-btn c-btn--primary">Customer Login</a>
-              <a href="/supplier-login" class="c-btn c-btn--secondary">Dealer Login</a>
+              <a href="/my-account" class="c-btn c-btn--ghost c-btn--tertiary">Customer Login</a>
+              <a href="/supplier-login" class="c-btn c-btn--primary">Dealer Login</a>
             <?php endif; ?>
           </div>
           <!-- Header Top Right End -->
@@ -58,6 +58,9 @@
             } else {
               wp_nav_menu();
             }
+
+            $cart_count = WC()->cart->cart_contents_count;
+            $cart_url = wc_get_cart_url();
             ?>
             <div class="primary-menu-toggle" data-toggle="primary-menu">
               <div class="line line--1"></div>
@@ -65,6 +68,12 @@
               <div class="line line--3"></div>
             </div>
           </nav>
+          <a href="<?= $cart_url; ?>" class="cart-link cart-contents" data-badge="<?= $cart_count; ?>" title="<?php _e('View your shopping cart', 'prorental'); ?>">
+            <svg class="icon icon-shopping-basket">
+                <use xlink:href="<?= get_theme_file_uri('dist/assets/img/icons.svg') . '#icon-shopping-basket'; ?>"></use>
+            </svg>
+            <span class="u-hidden-visually">My Cart</span>
+          </a>
         </div>
         <!-- Container End -->
       </div>
