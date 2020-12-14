@@ -238,6 +238,17 @@ if (!function_exists('prorental_add_geolocation_distance')) {
   }
 }
 
+/**
+ *  Removes order total column from the "My Orders" table in the account.
+ */
+function prorental_remove_order_total_column($columns) {
+  if( isset($columns['order-total']) ) {
+    unset( $columns['order-total'] );
+  }
+
+  return $columns;
+}
+
 
 /**
  * Adds a new column to the "My Orders" table in the account.
