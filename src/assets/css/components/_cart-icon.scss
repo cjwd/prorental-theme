@@ -1,0 +1,13 @@
+.cart-contents[data-badge]:after {
+	background-color: var(--colour-primary);
+	color: var(--colour-black);
+}
+
+.cart-link {
+	display: inline-block;
+	color: #666;
+}
+
+.icon-shopping-basket {
+	font-size: 24px;
+}

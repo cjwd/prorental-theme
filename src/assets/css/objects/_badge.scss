@@ -1,0 +1,17 @@
+[data-badge] {
+	position: relative;
+
+	&:after {
+		content: attr(data-badge);
+		position: absolute;
+		top: 0em;
+		left: 1em;
+		width: 1.5em;
+		height: 1.5em;
+		line-height: 1.5em;
+		border-radius: 4em;
+		text-align: center;
+		font-weight: bold;
+		color: currentColor;
+	}
+}
