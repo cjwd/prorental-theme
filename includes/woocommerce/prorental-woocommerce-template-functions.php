@@ -285,7 +285,19 @@ function prorental_order_delivery_date_column($order)
 function prorental_order_return_date_column($order)
 {
   foreach ($order->get_items() as $item_id => $item) {
-    $delivery_date = wc_get_order_item_meta($item_id, 'Drop-off Date', $single = true);
-    echo !empty($delivery_date) ? $delivery_date : '&ndash;';
+    $return_date = wc_get_order_item_meta($item_id, 'Drop-off Date', $single = true);
+    $current_date = date("m/d/Y");
+
+    if(!empty($return_date)) {
+      if($return_date < $current_date == 2) {
+        echo '<span class="date date--due">' . $return_date . '</span>';
+      } elseif($return_date > $current_date) {
+        echo '<span class="date date--expired">' . $return_date . '</span>';
+      } else {
+        echo '<span class="date">' . $return_date . '</span>';
+      }
+    } else {
+      echo '&ndash;';
+    }
   }
 }
