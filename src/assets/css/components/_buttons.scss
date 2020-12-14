@@ -12,82 +12,83 @@
  */
 
 .c-btn {
-  display: inline-block; /* [1] */
-  vertical-align: middle; /* [2] */
-  font: inherit; /* [3] */
-  text-align: center; /* [4] */
-  margin: 0; /* [4] */
-  cursor: pointer; /* [5] */
-  padding: $slate-global-spacing-unit-tiny $slate-global-spacing-unit-small !important;
-  transition: $global-transition;
-  border: none;
-  border-radius: $global-radius;
+	display: inline-block; /* [1] */
+	vertical-align: middle; /* [2] */
+	font: inherit; /* [3] */
+	text-align: center; /* [4] */
+	margin: 0; /* [4] */
+	cursor: pointer; /* [5] */
+	padding: $slate-global-spacing-unit-tiny $slate-global-spacing-unit-small !important;
+	transition: $global-transition;
+	border: none;
+	border-radius: 50px;
 }
 
 /* Style variants
    ========================================================================== */
 
 .c-btn--primary {
-  background-color: var(--colour-primary, #000);
+	background-color: var(--colour-primary, #000);
 
-  &,
-  &:hover,
-  &:active,
-  &:focus {
-    text-decoration: none; /* [4] */
-    color: var(--colour-white, #fff);
-  }
+	&,
+	&:hover,
+	&:active,
+	&:focus {
+		text-decoration: none; /* [4] */
+		color: var(--colour-black, #fff);
+	}
 
-  &:hover,
-  &:focus {
-    background-color: #3774a2;
-  }
+	&:hover,
+	&:focus {
+		background-color: #f79f1f;
+		color: #000;
+	}
 }
 
 .c-btn--secondary {
-  background-color: #2f4054;
+	background-color: #2f4054;
 
-  &,
-  &:hover,
-  &:active,
-  &:focus {
-    text-decoration: none;
-    color: #fff;
-  }
+	&,
+	&:hover,
+	&:active,
+	&:focus {
+		text-decoration: none;
+		color: #fff;
+	}
 
-  &:hover,
-  &:focus {
-    background-color: #1d2733;
-  }
+	&:hover,
+	&:focus {
+		background-color: #1d2733;
+	}
 }
 
 .c-btn--tertiary {
-  background-color: #fff;
-  color: #4a8ec2;
+	background-color: #fff;
+	color: #000;
 
-  &,
-  &:hover,
-  &:active,
-  &:focus {
-    text-decoration: none;
-    color: #4a8ec2;
-  }
+	&,
+	&:hover,
+	&:active,
+	&:focus {
+		text-decoration: none;
+		color: #000;
+	}
 
-  &:hover,
-  &:focus {
-    color: #3774a2;
-  }
+	&:hover,
+	&:focus {
+		color: #000;
+	}
 }
 
 /* Size variants
    ========================================================================== */
 
 .c-btn--small {
-  padding: $slate-global-spacing-unit-tiny $slate-global-spacing-unit-small;
+	padding: $slate-global-spacing-unit-tiny $slate-global-spacing-unit-small;
 }
 
 .c-btn--large {
-  padding: $slate-global-spacing-unit $slate-global-spacing-unit-large;
+	padding: $slate-global-spacing-unit $slate-global-spacing-unit-large;
 }
 
 /* Ghost buttons
@@ -100,48 +101,54 @@
 $btn-ghost-border-width: 2px;
 
 .c-btn--ghost {
-  border: $btn-ghost-border-width solid currentColor;
-  padding: ($slate-global-spacing-unit-small - $btn-ghost-border-width) ($slate-global-spacing-unit - $btn-ghost-border-width);
+	border: $btn-ghost-border-width solid currentColor;
+	padding: ($slate-global-spacing-unit-small - $btn-ghost-border-width)
+		($slate-global-spacing-unit - $btn-ghost-border-width);
+	background-color: transparent;
 
-  &,
-  &:hover,
-  &:active,
-  &:focus {
-    background: none;
-  }
+	&:hover,
+	&:active,
+	&:focus {
+		background: currentColor;
+		color: #fff;
+	}
 
-  &.c-btn--small {
-    padding: ($slate-global-spacing-unit-tiny - $btn-ghost-border-width) ($slate-global-spacing-unit-small - $btn-ghost-border-width);
-  }
+	&.c-btn--small {
+		padding: ($slate-global-spacing-unit-tiny - $btn-ghost-border-width)
+			($slate-global-spacing-unit-small - $btn-ghost-border-width);
+	}
 
-  &.c-btn--large {
-    padding: ($slate-global-spacing-unit - $btn-ghost-border-width) ($slate-global-spacing-unit-large - $btn-ghost-border-width);
-  }
+	&.c-btn--large {
+		padding: ($slate-global-spacing-unit - $btn-ghost-border-width)
+			($slate-global-spacing-unit-large - $btn-ghost-border-width);
+	}
 
-  &.c-btn--primary {
-    color: #4a8ec2;
+	&.c-btn--primary {
+		color: #4a8ec2;
 
-    &:hover,
-    &:focus {
-      color: #3774a2;
-    }
-  }
+		&:hover,
+		&:focus {
+			color: #3774a2;
+		}
+	}
 
-  &.c-btn--secondary {
-    color: #2f4054;
+	&.c-btn--secondary {
+		color: #2f4054;
 
-    &:hover,
-    &:focus {
-      color: #1d2733;
-    }
-  }
+		&:hover,
+		&:focus {
+			color: #1d2733;
+		}
+	}
 
-  &.c-btn--tertiary {
-    color: #fff;
+	&.c-btn--tertiary {
+		border-color: #ccc;
+		color: #000;
 
-    &:hover,
-    &:focus {
-      color: #fff;
-    }
-  }
+		&:hover,
+		&:focus {
+			background-color: #ccc;
+			color: #fff;
+		}
+	}
 }
