@@ -1,9 +1,11 @@
   <footer class="off-white-bg">
-    <div class="footer-top pt-50 pb-60">
-      <div class="container">
-        <?php Slate\widgetize_footer('sidebar-footer'); ?>
+    <?php if(is_active_sidebar( 'sidebar-footer' )) : ?>
+      <div class="footer-top pt-50 pb-60">
+        <div class="container">
+          <?php Slate\widgetize_footer('sidebar-footer'); ?>
+        </div>
       </div>
-    </div>
+    <?endif; ?>
 
     <!-- Footer Bottom Start -->
     <div class="footer-bottom off-white-bg2">
