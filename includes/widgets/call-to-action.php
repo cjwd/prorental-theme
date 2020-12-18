@@ -81,7 +81,7 @@ class Prorental_CTA_Widget extends WP_Widget {
 
         <p>
             <label for="<?= $this->get_field_id( 'image' ); ?>"><?php _e( 'Image URL:', 'prorental' ) ?></label>
-			<input class="widefat" type="url" id="<?php echo $this->get_field_id( 'image' ); ?>" name="<?php echo $this->get_field_name( 'image' ); ?>" value="<?php echo esc_attr( $instance['image'] ); ?>" />
+			<input class="widefat" type="text" id="<?php echo $this->get_field_id( 'image' ); ?>" name="<?php echo $this->get_field_name( 'image' ); ?>" value="<?php echo esc_attr( $instance['image'] ); ?>" />
         </p>
 
         <p>
