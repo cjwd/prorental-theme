@@ -187,3 +187,5 @@ add_action('widgets_init', function () {
 
   Helpers\bulk_register_sidebars(count($label_args), $label_args, $config);
 });
+
+require get_stylesheet_directory() . '/includes/widgets/call-to-action.php';
