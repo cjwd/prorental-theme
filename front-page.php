@@ -76,29 +76,4 @@
     </div>
   </div>
 </div>
-<!-- Brand Logo Start -->
-<div class="brand-area pb-60">
-  <div class="container">
-    <!-- Brand Banner Start -->
-    <div class="brand-banner row">
-      <div class="single-brand col-sm">
-        <a href="#"><img class="img" src="<?= get_stylesheet_directory_uri(); ?>/dist/assets/img/brand/1.png" alt="brand-image"></a>
-      </div>
-      <div class="single-brand col-sm">
-        <a href="#"><img src="<?= get_stylesheet_directory_uri(); ?>/dist/assets/img/brand/2.png" alt="brand-image"></a>
-      </div>
-      <div class="single-brand col-sm">
-        <a href="#"><img src="<?= get_stylesheet_directory_uri(); ?>/dist/assets/img/brand/3.png" alt="brand-image"></a>
-      </div>
-      <div class="single-brand col-sm">
-        <a href="#"><img src="<?= get_stylesheet_directory_uri(); ?>/dist/assets/img/brand/4.png" alt="brand-image"></a>
-      </div>
-      <div class="single-brand col-sm">
-        <a href="#"><img src="<?= get_stylesheet_directory_uri(); ?>/dist/assets/img/brand/5.png" alt="brand-image"></a>
-      </div>
-    </div>
-    <!-- Brand Banner End -->
-  </div>
-</div>
-<!-- Brand Logo End -->
 <?php get_footer();
