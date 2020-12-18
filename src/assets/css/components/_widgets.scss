@@ -13,3 +13,18 @@ Template: front-page
 		border: 0;
 	}
 }
+
+/**
+
+Footer Menus
+
+**/
+
+.c-menu--widget .c-menu__link {
+	padding: 0;
+	text-transform: capitalize;
+}
+
+.c-menu--widget .c-menu__link:hover {
+	background: transparent;
+}
