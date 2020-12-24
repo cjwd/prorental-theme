@@ -25,6 +25,10 @@ add_action('wp_enqueue_scripts', function () {
   /**
    * Theme Javascript
    */
+  if(is_page('my-account')) {
+    wp_enqueue_script( 'easy-resp-tabs', get_stylesheet_directory_uri() . '/dist/assets/js/easyResponsiveTabs.js', ['jquery'], null, true );
+  }
+  
   wp_enqueue_script('slate/main.js', get_stylesheet_directory_uri() . '/dist/assets/js/main.js', null, null, true);
 
   /**
