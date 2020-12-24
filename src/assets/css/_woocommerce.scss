@@ -8,6 +8,7 @@
 .woocommerce button.button:disabled:hover,
 .woocommerce button.button:disabled[disabled]:hover {
 	@extend .c-btn;
+	@extend .c-btn--primary;
 }
 
 .add_to_cart_button {
