@@ -2,72 +2,94 @@
 WooCommerce Checkout Form
 ========================================= */
 #woocommerce-checkout {
-  // Horizontal Aligned Radio Buttons
-  .form-row {
-    .woocommerce-input-wrapper {
-      display: flex;
-      align-items: center;
-    }
-  }
+	// Horizontal Aligned Radio Buttons
+	.form-row {
+		.woocommerce-input-wrapper {
+			display: flex;
+			align-items: center;
+		}
+	}
 
-  // Floating Labels
-  .form-row:not(.radio-group) {
-    position: relative;
-    margin-bottom: 1em;
+	// Floating Labels
+	.form-row:not(.radio-group) {
+		position: relative;
+		margin-bottom: 1em;
 
-    label {
-      position: absolute;
-      left: 0;
-      top: 0;
-      margin-left: 17px;
-      font-size: 1em;
-      line-height: 1.375;
-      transform: translateY(0.75em);
-      transform-origin: top left;
-      color: #646970;
-      cursor: text;
-      transition: transform 0.2s ease;
-      z-index: 99;
-    }
-  }
+		label {
+			position: absolute;
+			left: 0;
+			top: 0;
+			margin-left: 17px;
+			font-size: 1em;
+			line-height: 1.375;
+			transform: translateY(0.75em);
+			transform-origin: top left;
+			color: #646970;
+			cursor: text;
+			transition: transform 0.2s ease;
+			z-index: 99;
+		}
+	}
 
-  // When input is clicked
-  .form-row:not(.radio-group).is-active,
-  .form-row:not(.radio-group).is-filled {
-    input {
-      padding: 1.5em 0 0.25em 16px;
-    }
+	// When input is clicked
+	.form-row:not(.radio-group).is-active,
+	.form-row:not(.radio-group).is-filled {
+		input {
+			padding: 1.5em 0 0.25em 16px;
+		}
 
-    label {
-      transform: translateY(4px) scale(0.75);
-    }
-  }
+		label {
+			transform: translateY(4px) scale(0.75);
+		}
+	}
 
-  #billing_country_field,
-  #shipping_country_field,
-  #billing_state_field,
-  p[id='3_field'].address-field,
-  p[id='7_field'].address-field {
-    label {
-      position: unset;
-      margin-left: 0;
-      transform: none;
-    }
-  }
+	#billing_country_field,
+	#shipping_country_field,
+	#billing_state_field,
+	p[id='3_field'].address-field,
+	p[id='7_field'].address-field {
+		label {
+			position: unset;
+			margin-left: 0;
+			transform: none;
+		}
+	}
 
-  /* Temporary until unsetting of the order comments
+	/* Temporary until unsetting of the order comments
   doesn't product a PHP Warning
   See prorental-woocommerce-template-functions.php - line 198 */
-  #order_comments_field {
-    display: none;
-  }
+	#order_comments_field {
+		display: none;
+	}
 
-  // Override Default Select2 Select Input Height
-  .select2-container .select2-selection--single {
-    height: auto;
-  }
+	// Override Default Select2 Select Input Height
+	.select2-container .select2-selection--single {
+		height: auto;
+	}
 }
 
 .woocommerce-billing-fields h3 {
-  display: none;
+	display: none;
+}
+
+/* =========================================
+Login / Registration Forms (My Account)
+========================================= */
+
+.woocommerce form.checkout_coupon,
+.woocommerce form.login,
+.woocommerce form.register {
+	border: 0;
+	margin: 0;
+}
+
+#customer-login .woocommerce-form-login {
+	max-width: 640px;
+	margin: 0 auto;
+}
+
+.registration-fields-wrapper {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	grid-gap: 48px;
 }
