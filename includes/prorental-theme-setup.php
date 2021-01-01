@@ -61,10 +61,10 @@ add_action('after_setup_theme', function () {
    * Enable support for the_custom_logo()
    */
   add_theme_support('custom-logo', apply_filters('slate_custom_logo_args', array(
-    'height'      => null,
-    'width'       => null,
-    'flex-width'  => false,
-    'flex-height' => false,
+    'height'      => 100,
+    'width'       => 300,
+    'flex-width'  => true,
+    'flex-height' => true,
     'header-text' => ''
   )));
 

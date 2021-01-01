@@ -42,7 +42,11 @@
       <div class="header-bottom header-sticky">
         <div class="container">
           <div class="site-branding logo">
-            <h1 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></h1>
+            <?php if ( function_exists( 'the_custom_logo' ) && has_custom_logo() ) : ?>
+              <?php the_custom_logo(); ?>
+            <?php else: ?>
+              <h1 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></h1>
+            <?php endif; ?>
           </div>
           <nav class="primary-menu-wrapper" aria-label="<?php esc_attr_e('Primary', 'slate'); ?>" role="navigation">
             <?php
