@@ -21,7 +21,7 @@
         <div class="container">
           <!-- Header Top left Start -->
           <div class="header-top-left">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/assets/img/icon/call.png" alt="">Call Us : +11 222 3333
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/assets/img/icon/call.png" alt="">Call Us : <?= get_theme_mod('prorental_phone_number', '868 555-1234'); ?>
           </div>
           <!-- Header Top left End -->
           <!-- Header Top Right Start -->

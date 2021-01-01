@@ -1,12 +1,23 @@
 <?php
 
-namespace Slate;
+add_action('customize_register', function($wp_customize) {
 
-/**
- * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
- */
-function customize_preview_js()
-{
-  wp_enqueue_script('_s-customizer', get_template_directory_uri() . '/js/customizer.js', array('customize-preview'), '1.0.0', true);
-}
-add_action('customize_preview_init', 'customize_preview_js');
+  $wp_customize->add_setting( 'prorental_phone_number', [
+    'type' => 'theme_mod',
+    'capability' => 'edit_theme_options',
+    'default' => '(868) 555-5555',
+    'transport' => 'refresh', // or postMessage
+  ]);
+
+  $wp_customize->add_control( 'prorental_phone_number', [
+    'type' => 'tel',
+    'priority' => 10, // Within the section.
+    'section' => 'title_tagline', // Required, core or custom.
+    'label' => __( 'Phone Number', 'prorental' ),
+    'description' => __( 'Enter your company\'s contact number', 'prorental' ),
+    'input_attrs' => [
+      'placeholder' => '868 555-1234',
+    ],
+  ]);
+
+});

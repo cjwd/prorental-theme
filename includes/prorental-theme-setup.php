@@ -189,3 +189,4 @@ add_action('widgets_init', function () {
 });
 
 require get_stylesheet_directory() . '/includes/widgets/call-to-action.php';
+require get_stylesheet_directory() . '/includes/customizer.php';
